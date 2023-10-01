@@ -1,7 +1,7 @@
 # Joshua's shortcuts
 
 # for window navigation 
-gibby: key(cmd-tab)
+kip: key(cmd-tab)
 # swick uses alt tab app downloaded for mac from the internet
 #swick: 
 #    key(alt-tab) 
@@ -42,3 +42,13 @@ space left: key(ctrl-left)
 space right: key(ctrl-right) 
 space up: key(ctrl-up) 
 space down: key(ctrl-down) 
+
+chuck line: 
+    edit.delete_line()
+    user.delete_right()
+
+# edit hacks
+copy: edit.copy()
+paste: edit.paste()
+undo: edit.undo()
+redo: edit.redo()
