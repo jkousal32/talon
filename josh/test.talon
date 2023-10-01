@@ -52,3 +52,4 @@ copy: edit.copy()
 paste: edit.paste()
 undo: edit.undo()
 redo: edit.redo()
+
