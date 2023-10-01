@@ -32,7 +32,7 @@ copcop:
     edit.copy()
 
 # for hyperlink clicks 
-hypeclick: 
+con: 
     key(cmd:down)
     mouse_click()
     key(cmd:up)
