@@ -15,13 +15,15 @@ dell: key(backspace)
 
 # for VSCode
 search: key(cmd-shift-f) 
-files: key(cmd-shift-e)
-#code: key(ctrl-tilde) 
+files:  key(cmd-shift-e)
+code:   key("ctrl-~")
 item    :   key(cmd-1)   
 item one:   key(cmd-1)
 item two:   key(cmd-2)   
 item three: key(cmd-3)
+trash: key(cmd-backspace)
 
+# for terminal 
 copcop: 
     key(cmd-shift:down)
     mouse_click()
@@ -29,4 +31,14 @@ copcop:
     key(cmd-shift:up)
     edit.copy()
 
-trash: key(cmd-backspace)
+# for hyperlink clicks 
+hypeclick: 
+    key(cmd:down)
+    mouse_click()
+    key(cmd:up)
+
+# gestures
+space left: key(ctrl-left)
+space right: key(ctrl-right) 
+space up: key(ctrl-up) 
+space down: key(ctrl-down) 
