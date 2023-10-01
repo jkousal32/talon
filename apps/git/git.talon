@@ -12,6 +12,9 @@ git stash [push] [<user.git_arguments>] message [<user.prose>]:
     args = git_arguments or ""
     message = prose or ""
     user.insert_between("git stash push{args} --message '{message}", "'")
+git cam [<user.prose>]:
+    message = prose or ""
+    user.insert_between("git cam  '{message}", "'")
 
 # Optimistic execution for frequently used commands that are harmless (don't
 # change repository or index state).
