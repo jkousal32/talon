@@ -1,6 +1,6 @@
 from talon import Context, Module, actions, app
 
-
+is_mac = app.platform == "mac"
 
 ctx = Context()
 mac_ctx = Context()
@@ -79,7 +79,7 @@ class AppActions:
 @ctx.action_class("code")
 class CodeActions:
     # talon code actions
-        def toggle_comment():
+    def toggle_comment():
         actions.user.vscode("editor.action.commentLine")
 
 
