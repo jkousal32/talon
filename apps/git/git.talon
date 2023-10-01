@@ -14,7 +14,7 @@ git stash [push] [<user.git_arguments>] message [<user.prose>]:
     user.insert_between("git stash push{args} --message '{message}", "'")
 git cam [<user.prose>]:
     message = prose or ""
-    user.insert_between("git cam '{message}", "'")
+    user.insert_between("git commit -am '{message}", "'")
     key("right")
 
 # Optimistic execution for frequently used commands that are harmless (don't
