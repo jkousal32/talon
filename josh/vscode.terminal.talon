@@ -1,5 +1,5 @@
 app: vscode
-title: /Terminal/
+title: /terminal/
 -
 copa: insert("cp -a ")
 cad: insert("cd ")
