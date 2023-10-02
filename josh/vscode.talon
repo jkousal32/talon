@@ -2,7 +2,7 @@ app: vscode
 -
 search: key(cmd-shift-f) 
 files:  key(cmd-shift-e)
-code:   key("ctrl-`")
+terminal:   key("ctrl-`")
 item    :   key(cmd-1)   
 item one:   key(cmd-1)
 item two:   key(cmd-2)   
@@ -20,3 +20,4 @@ shommy:
     edit.line_start()
     user.delete_right()    
     user.delete_right()    
+
