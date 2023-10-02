@@ -11,7 +11,9 @@ swick: app.window_previous()
 
 # for general 
 save: key(cmd-s)
-dell: key(backspace)
+# dell: key(backspace)
+fool: key(ctrl-cmd-f)
+
 
 # for hyperlink clicks 
 hypeclick: 
