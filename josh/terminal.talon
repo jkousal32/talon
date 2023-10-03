@@ -135,7 +135,7 @@ vim save:
     key(":")  
     key("w")  
     key("enter")
-vim exit:
+vim quit:
     key("escape")
     key(":")  
     key("q")  
