@@ -74,9 +74,6 @@ portal:
 jump:
     insert("ssh hpc")
     key("enter")
-exit:
-    insert("exit")
-    key("enter")
 
 # programs
 open: insert("open ")
@@ -123,3 +120,30 @@ push settings:
     key(ctrl-c)    
     insert("cp -a /Users/pajk/.talon/user/josh/*.csv /Users/pajk/.talon/user/settings/ ")
     key(enter)    
+
+
+# vim commands
+vim bott:
+    key("escape")
+    key(shift-g)
+vim top:
+    key("escape")
+    key(g)
+    key(g)
+vim save:    
+    key("escape")
+    key(":")  
+    key("w")  
+    key("enter")
+vim exit:
+    key("escape")
+    key(":")  
+    key("q")  
+    key("!")  
+    key("enter")
+
+vim word left: key("shift-left")
+vim word right: key("shift-right")
+
+vim end: key("end")
+vim home: key("home")
