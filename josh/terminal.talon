@@ -32,10 +32,10 @@ tree detailed:
 
 # navigation
 go work:
-    insert("cd ~/"OneDrive - ECMWF"/josh")
+    insert('cd ~/"OneDrive - ECMWF"/josh')
     key("enter")
 go uni:
-    insert("cd ~/"OneDrive - The University of Melbourne"")
+    insert('cd ~/"OneDrive - The University of Melbourne"')
     key("enter")
 go back:
     insert("cd -")
