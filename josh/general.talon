@@ -22,13 +22,13 @@ space right: key(ctrl-right)
 space up: key(ctrl-up) 
 space down: key(ctrl-down) 
 
-chuck: edit.delete_line()
-
 # edit hacks
-#copy: edit.copy()
-#paste: edit.paste()
 undo: edit.undo()
 redo: edit.redo()
+chuck: edit.delete_line()
 
-# my alphabet
-# cpa josh/alphabetJosh.csv settings/alphabet.csv
+# mouse control 
+dog: tracking.control_toggle()
+debug: tracking.control_debug_toggle()
+
+# rimmy:parrot(cluck)
