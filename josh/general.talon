@@ -1,12 +1,7 @@
 # Joshua's shortcuts
 
 # for window navigation 
-gibby: key(cmd-tab)
-# swick uses alt tab app downloaded for mac from the internet
-#swick: 
-#    key(alt-tab) 
-#    sleep(100ms)
-#    key(space) 
+shimmy: key(cmd-tab)
 swick: app.window_previous()
 
 # for general 
