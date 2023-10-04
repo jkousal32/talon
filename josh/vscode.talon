@@ -15,7 +15,7 @@ commy:
     insert("# ")
     edit.left()
     edit.left()
-shommy: 
+bommy: 
     edit.line_start()
     edit.line_start()
     user.delete_right()    
