@@ -33,3 +33,4 @@ enta: key(enter)
 dog: tracking.control_toggle()
 debug: tracking.control_debug_toggle()
 
+spotlight: key(cmd-space)
