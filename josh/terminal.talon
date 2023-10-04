@@ -1,9 +1,11 @@
 app: terminal
 -
 
+# all change directory functionality is taken care of by "katie"
+# cad: insert("cd ")
+
 # basics
 copa: insert("cp -a ")
-cad: insert("cd ")
 move: insert("mv ")
 remove: insert("rm -f ")
 remove recursive: insert("rm -rf ")

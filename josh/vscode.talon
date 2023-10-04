@@ -21,3 +21,8 @@ shommy:
     user.delete_right()    
     user.delete_right()    
 
+# hack to fix broken go way up command
+go way up:
+    key(ctrl-g)
+    key(1)
+    key(enter)
