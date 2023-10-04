@@ -7,6 +7,7 @@ app: terminal
 # basics
 copa: insert("cp -a ")
 move: insert("mv ")
+make dir: insert("mkdir ")
 remove: insert("rm -f ")
 remove recursive: insert("rm -rf ")
 crick: key(ctrl-c)

@@ -1,7 +1,7 @@
 # Joshua's shortcuts
 
 # for window navigation 
-shimmy: key(cmd-tab)
+jimmy: key(cmd-tab)
 swick: app.window_previous()
 
 # for general 

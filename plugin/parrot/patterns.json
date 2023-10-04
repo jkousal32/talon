@@ -1,0 +1,38 @@
+{	
+	"cluck": {
+		"sounds": ["cluck"],
+		"threshold": {
+			">power": 20,
+			">probability": 0.999
+		},
+		"throttle": {
+			"cluck": 0.12,
+			"pop": 0.2
+		}
+	},
+	"swhistle": {
+		"sounds": ["swhistle"],
+		"threshold": {
+			">power": 2,
+			">probability": 0.999
+		}
+	},
+	"shush": {
+		"sounds": ["shush"],
+		"threshold": {
+			">power": 2,
+			">probability": 0.999
+		}
+	},
+		"pop": {
+		"sounds": ["pop"],
+		"threshold": {
+			">power": 2,
+			">probability": 0.95
+		},
+		"throttle": {
+			"cluck": 0.12,
+			"pop": 0.15
+		}
+	}
+}
