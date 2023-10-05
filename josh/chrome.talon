@@ -1,5 +1,26 @@
 app: chrome
 -
+
+bookmark:   key("cmd-b")
+commy: key("cmd-/")
+
+(kernel | colonel) restart: 
+    key("escape")
+    key("0")
+    key("0")
+(kernel | colonel) (interrupt | break): 
+    key("escape")
+    key("i")
+    key("i")
+
+(cell | sell) undo:
+    key("escape")
+    key("z")
+(cell | sell) redo:
+    key("escape")
+    key("shift-z")
+(cell | sell) split:   key("ctrl-shift-minus")
+(cell | sell) merge:   key("shift-m")
 (cell | sell) delete:
     key("escape")
     key("d")
@@ -7,6 +28,9 @@ app: chrome
 (cell | sell) copy:
     key("escape")
     key("c")
+(cell | sell) cut:
+    key("escape")
+    key("x")
 (cell | sell) paste:
     key("escape")
     key("v")
@@ -31,5 +55,3 @@ app: chrome
 (cell | sell) down:
     key("escape")
     key("down")
-
-commy: key("cmd-/")

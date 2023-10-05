@@ -8,8 +8,7 @@ brick: app.window_next()
 # for general 
 # save it: key(cmd-s)
 # dell: key(backspace)
-# go full: key(ctrl-cmd-f)
-#  this is taken care of by "full screen"^^
+fool screen: key(ctrl-cmd-f)
 
 # for hyperlink clicks 
 hipclick: 
