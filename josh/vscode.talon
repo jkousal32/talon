@@ -8,6 +8,7 @@ item one:   key(cmd-1)
 item two:   key(cmd-2)   
 item three: key(cmd-3)
 trash: key(cmd-backspace)
+bookmark:   key("cmd-b")
 
 commy: 
     edit.line_start()
