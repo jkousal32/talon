@@ -3,15 +3,16 @@
 # for window navigation 
 jimmy: key(cmd-tab)
 swick: app.window_previous()
+brick: app.window_next()
 
 # for general 
-save it: key(cmd-s)
+# save it: key(cmd-s)
 # dell: key(backspace)
-fool: key(ctrl-cmd-f)
-
+# go full: key(ctrl-cmd-f)
+#  this is taken care of by "full screen"^^
 
 # for hyperlink clicks 
-hypeclick: 
+hipclick: 
     key(cmd:down)
     mouse_click()
     key(cmd:up) 
@@ -30,7 +31,7 @@ clap: edit.line_insert_down()
 enta: key(enter)
 
 # mouse control 
-dog: tracking.control_toggle()
-debug: tracking.control_debug_toggle()
+# dog: tracking.control_toggle()
+# debug: tracking.control_debug_toggle()
 
 spotlight: key(cmd-space)

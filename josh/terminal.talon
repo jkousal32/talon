@@ -113,6 +113,8 @@ hpc:
 
 # random
 copcop: 
+#     mouse_click()
+#     sleep(800ms)
     key(cmd-shift:down)
     mouse_click()
     mouse_click()
@@ -120,10 +122,8 @@ copcop:
     edit.copy()
 
 push settings:
-    key(ctrl-c)    
     insert("cp -a /Users/pajk/.talon/user/josh/*.csv /Users/pajk/.talon/user/settings/ ")
     key(enter)    
-
 
 # vim commands
 vim bott:
@@ -135,15 +135,17 @@ vim top:
     key(g)
 vim save:    
     key("escape")
-    key(":")  
-    key("w")  
+    insert(":w")  
     key("enter")
 vim quit:
     key("escape")
-    key(":")  
-    key("q")  
-    key("!")  
+    insert(":q!")  
     key("enter")
+vim save quit:
+    key("escape")
+    insert(":wq")  
+    key("enter")
+
 
 vim word left: key("shift-left")
 vim word right: key("shift-right")

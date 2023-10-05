@@ -8,6 +8,7 @@ title: /terminal/
 # basics
 copa: insert("cp -a ")
 move: insert("mv ")
+make dir: insert("mkdir ")
 remove: insert("rm -f ")
 remove recursive: insert("rm -rf ")
 crick: key(ctrl-c)
@@ -120,10 +121,8 @@ copcop:
     edit.copy()
 
 push settings:
-    key(ctrl-c)    
     insert("cp -a /Users/pajk/.talon/user/josh/*.csv /Users/pajk/.talon/user/settings/ ")
     key(enter)    
-
 
 # vim commands
 vim bott:
@@ -135,15 +134,17 @@ vim top:
     key(g)
 vim save:    
     key("escape")
-    key(":")  
-    key("w")  
+    insert(":w")  
     key("enter")
 vim quit:
     key("escape")
-    key(":")  
-    key("q")  
-    key("!")  
+    insert(":q!")  
     key("enter")
+vim save quit:
+    key("escape")
+    insert(":wq")  
+    key("enter")
+
 
 vim word left: key("shift-left")
 vim word right: key("shift-right")

@@ -6,8 +6,33 @@
 			">probability": 0.999
 		},
 		"throttle": {
-			"cluck": 0.12,
-			"pop": 0.2
+			"cluck": 0.15,
+			"pop": 0.3
+		}
+	},
+	"clack": {
+		"sounds": ["clack"],
+		"threshold": {
+			">power": 10,
+			">probability": 0.999
+		},
+		"throttle": {
+			"clack": 0.15,
+			"cluck": 0.15,
+			"pop": 0.3
+		}
+	},
+	"whistle": {
+		"sounds": ["whistle"],
+		"threshold": {
+			">power": 20,
+			">probability": 0.999
+		},
+		"throttle": {
+			"clack": 0.15,
+			"whistle": 0.15,
+			"cluck": 0.15,
+			"pop": 0.3
 		}
 	},
 	"swhistle": {
@@ -20,18 +45,18 @@
 	"shush": {
 		"sounds": ["shush"],
 		"threshold": {
-			">power": 2,
-			">probability": 0.999
+			">power": 1,
+			">probability": 0.99
 		}
 	},
 		"pop": {
 		"sounds": ["pop"],
 		"threshold": {
-			">power": 2,
-			">probability": 0.95
+			">power": 5,
+			">probability": 0.98
 		},
 		"throttle": {
-			"cluck": 0.12,
+			"cluck": 0.15,
 			"pop": 0.15
 		}
 	}
