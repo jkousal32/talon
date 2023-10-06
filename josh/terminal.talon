@@ -11,12 +11,12 @@ make dir: insert("mkdir ")
 remove: insert("rm -f ")
 remove recursive: insert("rm -rf ")
 crick: key(ctrl-c)
-show deal: 
+where am I:
     insert("pwd")
     key("enter")
 list:
-    insert("ls -ltrh --color")
-    key("enter")
+    insert("ls -ltrh --color ")
+    # key("enter")
 list downloads:
     insert("ls -ltrh --color ~/Downloads ")
     key("enter")

@@ -4,6 +4,13 @@ app: chrome
 bookmark:   key("cmd-b")
 commy: key("cmd-/")
 
+# page top: 
+#     key("escape")
+#     key("home")
+# page bottom: 
+#     key("escape")
+#     key("end")
+
 (kernel | colonel) restart: 
     key("escape")
     key("0")
@@ -13,6 +20,12 @@ commy: key("cmd-/")
     key("i")
     key("i")
 
+(cell | sell) above:
+    key("escape")
+    key("a")
+(cell | sell) (below | bello):
+    key("escape")
+    key("b")
 (cell | sell) undo:
     key("escape")
     key("z")
@@ -42,11 +55,11 @@ commy: key("cmd-/")
     key("v")
     key("down")
     key("up")
-(cell | sell) run:
+(cell | sell) run stay:
     key("escape")
     key("shift-enter")
     key("up")
-(cell | sell) run down:
+(cell | sell) run:
     key("escape")
     key("shift-enter")
 (cell | sell) up:
