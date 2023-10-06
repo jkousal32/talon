@@ -8,7 +8,11 @@ brick: app.window_next()
 # for general 
 # save it: key(cmd-s)
 # dell: key(backspace)
-fool screen: key(ctrl-cmd-f)
+screen (fool | full): key(ctrl-cmd-f)
+
+# Duplication
+(clone | clon) that: edit.selection_clone()
+(clone | clon) line: edit.line_clone()
 
 # for hyperlink clicks 
 hipclick: 
@@ -27,10 +31,20 @@ undo: edit.undo()
 redo: edit.redo()
 chuck: edit.delete_line()
 clap: edit.line_insert_down()
+
+# Keys 
+(home | hom): key("home")
+# (under | unda): key("_")
 enta: key(enter)
+centa: 
+    key("up")
+    key("down")
 
 # mouse control 
 # dog: tracking.control_toggle()
 # debug: tracking.control_debug_toggle()
 
 spotlight: key(cmd-space)
+
+indent: key("tab")
+undent: key("shift-tab")

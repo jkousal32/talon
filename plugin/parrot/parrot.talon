@@ -8,4 +8,3 @@ parrot(cluck): core.repeat_phrase(1)
 # parrot(whistle): tracking.control_toggle()
 parrot(clack): tracking.control_toggle()
 # parrot(clack): key(cmd-right shift-enter)
-
