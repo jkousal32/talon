@@ -49,6 +49,9 @@ go talon:
 go downloads:
     insert("cd ~/Downloads")
     key("enter")
+go screenshots:
+    insert("cd /Users/pajk/Documents/screenshots")
+    key("enter")
 
 # HPC navigation
 go perm:
@@ -145,6 +148,18 @@ vim save quit:
     key("escape")
     insert(":wq")  
     key("enter")
+undo:
+    key("escape")
+    key("u")
+redo:
+    key(escape)
+    key(ctrl-r) 
+find it:
+    key("/") 
+previous one:
+    key(shift-n) 
+next one:
+    key(n) 
 
 vim word left: key("shift-left")
 vim word right: key("shift-right")

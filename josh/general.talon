@@ -9,6 +9,7 @@ brick: app.window_next()
 # save it: key(cmd-s)
 # dell: key(backspace)
 screen (fool | full): key(ctrl-cmd-f)
+screen shot: key(cmd-shift-5)
 
 # Duplication
 (clone | clon) that: edit.selection_clone()
