@@ -36,6 +36,7 @@ clap: edit.line_insert_down()
 (home | hom): key("home")
 # (under | unda): key("_")
 enta: key(enter)
+(equals | ecols | ecools): key("=")
 centa: 
     key("up")
     key("down")
