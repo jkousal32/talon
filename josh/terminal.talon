@@ -85,7 +85,7 @@ trash: insert("trash ")
 diff: insert("diff ")
 grep: insert("grep ")
 grep recursive: insert("grep -r ")
-file hunt: insert("find . -name ")
+find file: insert("find . -name ")
 history:    insert("history ")
 tail:
     insert("tail -5")
@@ -126,7 +126,7 @@ push settings:
     key(enter)    
 
 # vim commands
-vim bott:
+vim (bott | bottom):
     key("escape")
     key(shift-g)
 vim top:
@@ -145,7 +145,6 @@ vim save quit:
     key("escape")
     insert(":wq")  
     key("enter")
-
 
 vim word left: key("shift-left")
 vim word right: key("shift-right")
