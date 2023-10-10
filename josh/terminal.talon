@@ -1,4 +1,4 @@
-app: terminal
+tag: terminal
 -
 
 # all change directory functionality is taken care of by "katie"
@@ -51,6 +51,9 @@ go downloads:
     key("enter")
 go screenshots:
     insert("cd /Users/pajk/Documents/screenshots")
+    key("enter")
+go literature:
+    insert("cd '/Users/pajk/OneDrive - The University of Melbourne/phd/literature'")
     key("enter")
 
 # HPC navigation
@@ -148,17 +151,17 @@ vim save quit:
     key("escape")
     insert(":wq")  
     key("enter")
-undo:
+vim undo:
     key("escape")
     key("u")
-redo:
+vim redo:
     key(escape)
     key(ctrl-r) 
-find it:
+vim find it:
     key("/") 
-previous one:
+vim previous one:
     key(shift-n) 
-next one:
+vim next one:
     key(n) 
 
 vim word left: key("shift-left")

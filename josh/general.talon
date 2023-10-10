@@ -50,3 +50,7 @@ spotlight: key(cmd-space)
 
 indent: key("tab")
 undent: key("shift-tab")
+
+# my drag and drop function
+# ^drag:  user.mouse_drag(0)
+# drop$:  user.mouse_drag_end()
