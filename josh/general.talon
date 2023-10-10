@@ -54,3 +54,12 @@ undent: key("shift-tab")
 # my drag and drop function
 # ^drag:  user.mouse_drag(0)
 # drop$:  user.mouse_drag_end()
+
+(curve | curve left): key("(")
+curve right: key(")")
+(curly | curly left): key("{")
+curly right: key("}")
+(square | square left): key("[")
+square right: key("]")
+(angle | angle left): key("<")
+angle right: key(">")
