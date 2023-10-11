@@ -63,3 +63,6 @@ curly right: key("}")
 square right: key("]")
 (angle | angle left): key("<")
 angle right: key(">")
+
+tinny down: user.mouse_scroll_down()
+tinny up:   user.mouse_scroll_up()

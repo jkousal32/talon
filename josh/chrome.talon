@@ -4,7 +4,8 @@ title: /JupyterLab/i
 tag(): user.python
 
 bookmark:   key("cmd-b")
-commy: key("cmd-/")
+# was previously commy
+rommy: key("cmd-/")
 
 # page top: 
 #     key("escape")
