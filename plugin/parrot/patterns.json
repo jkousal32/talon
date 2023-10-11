@@ -53,7 +53,7 @@
 		"sounds": ["pop"],
 		"threshold": {
 			">power": 5,
-			">probability": 0.98
+			">probability": 0.999
 		},
 		"throttle": {
 			"cluck": 0.15,

@@ -13,7 +13,8 @@ item three: key(cmd-3)
 trash: key(cmd-backspace)
 bookmark:   key("cmd-b")
 
-commy: 
+# was previously commy
+rommy: 
     edit.line_start()
     edit.line_start()
     insert("# ")
