@@ -35,6 +35,7 @@ clap: edit.line_insert_down()
 
 # Keys 
 (home | hom): key("home")
+(rom | ron): key("home")
 # (under | unda): key("_")
 enta: key(enter)
 (equals | ecols | ecools): key("=")
@@ -64,5 +65,7 @@ square right: key("]")
 (angle | angle left): key("<")
 angle right: key(">")
 
-tinny down: user.mouse_scroll_down()
-tinny up:   user.mouse_scroll_up()
+willy down: user.mouse_scroll_down()
+willy up:   user.mouse_scroll_up()
+willy left: user.mouse_scroll_left()
+willy right:   user.mouse_scroll_right()
