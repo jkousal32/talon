@@ -1,3 +1,3 @@
 mode: all
 -
-sleepy: speech.disable()
+(sleepy time | sleepy)  : speech.disable()

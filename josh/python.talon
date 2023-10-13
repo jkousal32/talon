@@ -8,6 +8,9 @@ tag:  user.python
 (new | noo) loop:
     insert("for  in s:")
     key("left:6")
+(new | noo) global:
+    insert("globals()['']")
+    key("left:2")
 (new | noo) if:
     insert("if :")
     key("left:1")
