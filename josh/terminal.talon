@@ -59,7 +59,7 @@ go work:
 go uni:
     insert('cd ~/"OneDrive - The University of Melbourne"')
     key("enter")
-go back:
+go back back:
     insert("cd -")
     key("enter")
 go talon:
@@ -88,8 +88,14 @@ go script mars:
 go vol:
     insert("cd /ec/vol/ifs/rd/pajk/")
     key("enter")
-go branch:
+go ifs source:
     insert("cd /perm/pajk/git/ifs-source/")
+    key("enter")
+go ifs (scripts | scripps):
+    insert("cd /perm/pajk/git/ifs-scripts/")
+    key("enter")
+go ifs defaults:
+    insert("cd /perm/pajk/git/ifs-defaults/")
     key("enter")
     
 # login stuff
