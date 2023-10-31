@@ -97,6 +97,9 @@ go ifs (scripts | scripps):
 go ifs defaults:
     insert("cd /perm/pajk/git/ifs-defaults/")
     key("enter")
+go ecwam source:
+    insert("cd contrib/ecwam/src/ecwam")
+    key("enter")
     
 # login stuff
 login:
