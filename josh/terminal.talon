@@ -59,7 +59,7 @@ go work:
 go uni:
     insert('cd ~/"OneDrive - The University of Melbourne"')
     key("enter")
-go back back:
+[go] back back:
     insert("cd -")
     key("enter")
 go talon:
@@ -100,7 +100,13 @@ go ifs defaults:
 go ecwam source:
     insert("cd contrib/ecwam/src/ecwam")
     key("enter")
-    
+go nemo source ice:
+    insert("cd nemo/NEMOGCM_V40/src/ICE")
+    key("enter")
+go nemo source ocean:
+    insert("cd nemo/NEMOGCM_V40/src/OCE")
+    key("enter")
+
 # login stuff
 login:
     insert("tsh login")
