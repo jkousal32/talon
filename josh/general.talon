@@ -4,10 +4,9 @@
 jimmy: key(cmd-tab)
 swick: app.window_previous()
 brick: app.window_next()
+window quit: key(cmd-q)
 
 # for general 
-# save it: key(cmd-s)
-# dell: key(backspace)
 screen (fool | full): key(ctrl-cmd-f)
 screen shot: key(cmd-shift-5)
 
@@ -33,10 +32,8 @@ redo: edit.redo()
 chuck: edit.delete_line()
 clap: edit.line_insert_down()
 
-# Keys 
-(home | hom): key("home")
-(rom | ron): key("home")
-# (under | unda): key("_")
+# Keys
+johnny: key("home")
 enta: key(enter)
 (equals | ecols | ecools): key("=")
 centa: 
@@ -51,10 +48,6 @@ spotlight: key(cmd-space)
 
 indent: key("tab")
 undent: key("shift-tab")
-
-# my drag and drop function
-# ^drag:  user.mouse_drag(0)
-# drop$:  user.mouse_drag_end()
 
 (curve | curve left): key("(")
 curve right: key(")")
