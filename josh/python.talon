@@ -28,3 +28,6 @@ tag:  user.python
 (new | noo) list:
     insert("['',]")
     key("left:3")
+(new | noo) import:
+    insert("from  import ")
+    key("left:8")

@@ -117,8 +117,8 @@ open: insert("open ")
 vim: insert("vim ")
 trash: insert("trash ")
 diff: insert("diff ")
-grep: insert("grep ")
-grep recursive: insert("grep -r ")
+grep: insert("grep -i ")
+grep recursive: insert("grep -r -i ")
 find file: insert("find . -name ")
 history:    insert("history ")
 tail:
@@ -127,8 +127,8 @@ tail:
 
 
 # HPC programs
-voo: insert("ncview ")
-dump: insert("ncdump -h ")
+visual: insert("ncview ")
+dump  : insert("ncdump -h ")
 que cancel: insert("scancel ")
 que sub:    insert("sbatch ")
 que stat:
