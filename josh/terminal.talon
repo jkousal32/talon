@@ -88,6 +88,7 @@ go script mars:
 go vol:
     insert("cd /ec/vol/ifs/rd/pajk/")
     key("enter")
+    
 go ifs source:
     insert("cd /perm/pajk/git/ifs-source/")
     key("enter")
@@ -97,6 +98,17 @@ go ifs (scripts | scripps):
 go ifs defaults:
     insert("cd /perm/pajk/git/ifs-defaults/")
     key("enter")
+
+go ifs source git:
+    insert("cd ~/ifs-source.git/")
+    key("enter")
+go ifs (scripts | scripps) git:
+    insert("cd ~/ifs-scripts.git/")
+    key("enter")
+go ifs defaults git:
+    insert("cd ~/ifs-defaults.git/")
+    key("enter")
+
 go ecwam source:
     insert("cd contrib/ecwam/src/ecwam")
     key("enter")
@@ -131,6 +143,33 @@ tail:
     insert("tail -5")
     key("enter")
 
+# vim file from grep search (hover cursor first)
+bambam:
+    key(cmd-shift:down)
+    mouse_click()
+    mouse_click()
+    key(cmd-shift:up)
+    edit.copy()
+    insert("vim ")
+    edit.paste()
+    key("backspace")
+    key("enter")
+
+grep that: 
+    edit.copy()
+    insert("grep -r -i ")
+    edit.paste()
+    key("enter")
+vim  that: 
+    edit.copy()
+    insert("vim ")
+    edit.paste()
+    key("enter")
+open that: 
+    edit.copy()
+    insert("open ")
+    edit.paste()
+    key("enter")
 
 # HPC programs
 visual: insert("ncview ")
