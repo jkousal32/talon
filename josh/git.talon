@@ -13,7 +13,5 @@ git ifsbranch that:
     edit.paste()
     insert(" -b   -J")
     key("left:4")
-git ifsbranch:
-    insert("git ifsbranch -B   -b   -J")
-    key("left:9")
+git ifsbranch:    insert("git ifsbranch ")
 git ifsremote:    insert("git ifsremote ")
