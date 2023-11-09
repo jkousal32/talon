@@ -160,6 +160,11 @@ grep that:
     insert("grep -r -i ")
     edit.paste()
     key("enter")
+katie that: 
+    edit.copy()
+    insert("cd ")
+    edit.paste()
+    key("enter")
 vim  that: 
     edit.copy()
     insert("vim ")
