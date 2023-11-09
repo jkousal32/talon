@@ -33,16 +33,16 @@ crick: key(ctrl-c)
 where am I:
     insert("pwd")
     key("enter")
-list:
+(list | lauri):
     insert("ls -ltrh --color ")
-    # key("enter")
+    key("enter")
 list downloads:
     insert("ls -ltrh --color ~/Downloads ")
     key("enter")
-list human:
+(list human | lily):
     insert("ls -lh")
     key("enter")
-list size:
+(list size | doosha):
     insert("du -sh *")
     key("enter")
 tree:
