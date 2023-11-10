@@ -98,6 +98,9 @@ go ifs (scripts | scripps):
 go ifs defaults:
     insert("cd /perm/pajk/git/ifs-defaults/")
     key("enter")
+go ifs suites:
+    insert("cd /perm/pajk/git/ifs-suites/")
+    key("enter")
 
 go ifs source git:
     insert("cd ~/ifs-source.git/")
@@ -107,6 +110,9 @@ go ifs (scripts | scripps) git:
     key("enter")
 go ifs defaults git:
     insert("cd ~/ifs-defaults.git/")
+    key("enter")
+go ifs suites git:
+    insert("cd ~/ifs-suites.git/")
     key("enter")
 
 go ecwam source:
