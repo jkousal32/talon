@@ -27,8 +27,11 @@ space up: key(ctrl-up)
 space down: key(ctrl-down) 
 
 # edit hacks
-undo: edit.undo()
-redo: edit.redo()
+undo  (that | dat): edit.undo()
+redo  (that | dat): edit.redo()
+copy  (that | dat): edit.copy()
+cut   (that | dat): edit.cut()
+(paste | pace) (that | dat): edit.paste()
 chuck: edit.delete_line()
 clap: edit.line_insert_down()
 

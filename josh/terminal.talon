@@ -139,9 +139,9 @@ grep: insert("grep -i ")
 grep recursive: insert("grep -r -i ")
 find file: insert("find . -name ")
 history:    insert("history ")
-tail:
-    insert("tail -5")
-    key("enter")
+#tail:
+#     insert("tail -5")
+#     key("enter")
 
 # vim file from grep search (hover cursor first)
 bambam:
@@ -155,22 +155,22 @@ bambam:
     key("backspace")
     key("enter")
 
-grep that: 
+grep (that | dat): 
     edit.copy()
     insert("grep -r -i ")
     edit.paste()
     key("enter")
-katie that: 
+katie (that | dat): 
     edit.copy()
     insert("cd ")
     edit.paste()
     key("enter")
-vim  that: 
+(vimmy | vim)  (that | dat): 
     edit.copy()
     insert("vim ")
     edit.paste()
     key("enter")
-open that: 
+open (that | dat): 
     edit.copy()
     insert("open ")
     edit.paste()
@@ -210,40 +210,44 @@ push settings:
     key(enter)    
 
 # vim commands
-vim (bott | bottom):
+(vimmy | vim) bottom:
     key("escape")
     key(shift-g)
-vim top:
+(vimmy | vim) top:
     key("escape")
-    key(g)
-    key(g)
-vim save:    
+    key(g:2)
+(vimmy | vim) save:    
     key("escape")
     insert(":w")  
     key("enter")
-vim quit:
+(vimmy | vim) quit:
     key("escape")
     insert(":q!")  
     key("enter")
-vim save quit:
+(vimmy | vim) save quit:
     key("escape")
     insert(":wq")  
     key("enter")
-vim undo:
+(vimmy | vim) undo (that | dat):
     key("escape")
     key("u")
-vim redo:
+(vimmy | vim) redo (that | dat):
     key(escape)
     key(ctrl-r) 
-vim find it:
-    key("/") 
-vim previous one:
-    key(shift-n) 
-vim next one:
-    key(n) 
+(vimmy | vim) word left: key("shift-left")
+(vimmy | vim) word right: key("shift-right")
+(vimmy | vim) end : 
+    key("escape")
+    key("i")
+    key("end")
+(vimmy | vim) home: 
+    key("escape")
+    key("i")
+    key("home")
 
-vim word left: key("shift-left")
-vim word right: key("shift-right")
-
-vim end: key("end")
-vim home: key("home")
+slash (that | dat): 
+    edit.copy()
+    key(escape)
+    insert("/")
+    edit.paste()
+    key("enter")
