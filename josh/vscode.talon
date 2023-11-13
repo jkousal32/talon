@@ -12,11 +12,18 @@ item three: key(cmd-3)
 trash: key(cmd-backspace)
 bookmark:   key("cmd-b")
 
+# comment/uncomment out lines in python/fortran
 # was previously commy
 rommy: 
     edit.line_start()
     edit.line_start()
     insert("# ")
+    edit.left()
+    edit.left()
+rommy f:  
+    edit.line_start()
+    edit.line_start()
+    insert("! ")
     edit.left()
     edit.left()
 bommy: 
