@@ -13,3 +13,12 @@ termo tab previous:  key("ctrl-pageup")
 termo tab next:      key("ctrl-pagedown")
 
 termo window new:    key(ctrl-shift-n)
+
+# programs
+hpc:
+    insert('hpc')
+    key(enter)
+ecflow:
+    insert('ecflow_ui&')
+    key(enter)
+termo tab next:      key("ctrl-pagedown")

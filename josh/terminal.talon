@@ -115,14 +115,21 @@ go ifs suites git:
     insert("cd ~/ifs-suites.git/")
     key("enter")
 
+# commands to be used from ifs-source branch
 go ecwam source:
     insert("cd contrib/ecwam/src/ecwam")
+    key("enter")
+go nemo source:
+    insert("cd nemo/NEMOGCM_V40/src")
     key("enter")
 go nemo source ice:
     insert("cd nemo/NEMOGCM_V40/src/ICE")
     key("enter")
 go nemo source ocean:
     insert("cd nemo/NEMOGCM_V40/src/OCE")
+    key("enter")
+go coupla source:
+    insert("cd nemo/coupled/src")
     key("enter")
 
 # login stuff
