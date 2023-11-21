@@ -53,6 +53,9 @@ tree detailed:
     key("enter")
 
 # navigation
+go home:
+    insert('cd ~')
+    key("enter")
 go work:
     insert('cd ~/"OneDrive - ECMWF"/josh')
     key("enter")
@@ -75,74 +78,6 @@ go literature:
     insert("cd '/Users/pajk/OneDrive - The University of Melbourne/phd/literature'")
     key("enter")
 
-# HPC navigation
-go perm:
-    insert("cd $PERM")
-    key("enter")
-go perm mars:
-    insert("cd $PERM/marsData/seasonal/")
-    key("enter")
-go script mars:
-    insert("cd ~/scripts/mars/seasonal/")
-    key("enter")
-go vol:
-    insert("cd /ec/vol/ifs/rd/pajk/")
-    key("enter")
-    
-go ifs source:
-    insert("cd /perm/pajk/git/ifs-source/")
-    key("enter")
-go ifs (scripts | scripps):
-    insert("cd /perm/pajk/git/ifs-scripts/")
-    key("enter")
-go ifs defaults:
-    insert("cd /perm/pajk/git/ifs-defaults/")
-    key("enter")
-go ifs suites:
-    insert("cd /perm/pajk/git/ifs-suites/")
-    key("enter")
-
-go ifs source git:
-    insert("cd ~/ifs-source.git/")
-    key("enter")
-go ifs (scripts | scripps) git:
-    insert("cd ~/ifs-scripts.git/")
-    key("enter")
-go ifs defaults git:
-    insert("cd ~/ifs-defaults.git/")
-    key("enter")
-go ifs suites git:
-    insert("cd ~/ifs-suites.git/")
-    key("enter")
-
-# commands to be used from ifs-source branch
-go ecwam source:
-    insert("cd contrib/ecwam/src/ecwam")
-    key("enter")
-go nemo source:
-    insert("cd nemo/NEMOGCM_V40/src")
-    key("enter")
-go nemo source ice:
-    insert("cd nemo/NEMOGCM_V40/src/ICE")
-    key("enter")
-go nemo source ocean:
-    insert("cd nemo/NEMOGCM_V40/src/OCE")
-    key("enter")
-go coupla source:
-    insert("cd nemo/coupled/src")
-    key("enter")
-
-# login stuff
-login:
-    insert("tsh login")
-    key("enter")
-portal:
-    insert("ssh -v -C -N -D 9050 -J pajk@jump.ecmwf.int pajk@hpc-login.ecmwf.int")
-    key("enter")
-jump:
-    insert("ssh hpc")
-    key("enter")
-
 # programs
 open: insert("open ")
 vim: insert("vim ")
@@ -151,7 +86,9 @@ diff: insert("diff ")
 grep: insert("grep -i ")
 grep recursive: insert("grep -r -i ")
 find file: insert("find . -name ")
-history:    insert("history ")
+history:    
+    insert("history ")
+    key("enter")
 #tail:
 #     insert("tail -5")
 #     key("enter")
@@ -203,25 +140,6 @@ untar (that | dat):
     insert("tar xvf ")
     edit.paste()
     key("enter")
-
-# HPC programs
-visual: insert("ncview ")
-dump  : insert("ncdump -h ")
-que cancel: insert("scancel ")
-que sub:    insert("sbatch ")
-que stat:
-    insert("preprun pajk")
-    key("enter")
-jupiter launch:
-    insert("ecinteractive -j -c32 -m 32G -t 12:00:00")
-    key("enter")
-jupiter cancel:
-    insert("/usr/local/bin/ecinteractive -p hpc -k")
-    key("enter")
-hpc:
-    insert("ssh hpc2020-login")
-    key("enter")
-    
 
 # random
 copcop: 
@@ -279,3 +197,96 @@ slash (that | dat):
     insert("/")
     edit.paste()
     key("enter")
+
+# ---------------------------------------------------------------------
+# ------------------- HPC ---------------------------------------------
+
+
+# HPC login stuff (to get into HPC)
+login:
+    insert("tsh login")
+    key("enter")
+portal:
+    insert("ssh -v -C -N -D 9050 -J pajk@jump.ecmwf.int pajk@hpc-login.ecmwf.int")
+    key("enter")
+jump:
+    insert("ssh hpc")
+    key("enter")
+
+# HPC programs (once in HPC)
+visual: insert("ncview ")
+dump  : insert("ncdump -h ")
+que cancel: insert("scancel ")
+que sub:    insert("sbatch ")
+que stat:
+    insert("preprun pajk")
+    key("enter")
+jupiter launch:
+    insert("ecinteractive -j -c32 -m 32G -t 12:00:00")
+    key("enter")
+jupiter cancel:
+    insert("/usr/local/bin/ecinteractive -p hpc -k")
+    key("enter")
+hpc:
+    insert("ssh hpc2020-login")
+    key("enter")
+
+
+# HPC navigation (once in HPC)
+go perm:
+    insert("cd $PERM")
+    key("enter")
+go perm mars:
+    insert("cd $PERM/marsData/seasonal/")
+    key("enter")
+go script mars:
+    insert("cd ~/scripts/mars/seasonal/")
+    key("enter")
+go vol:
+    insert("cd /ec/vol/ifs/rd/pajk/")
+    key("enter")
+    
+go ifs source:
+    insert("cd /perm/pajk/git/ifs-source/")
+    key("enter")
+go ifs (scripts | scripps):
+    insert("cd /perm/pajk/git/ifs-scripts/")
+    key("enter")
+go ifs defaults:
+    insert("cd /perm/pajk/git/ifs-defaults/")
+    key("enter")
+go ifs suites:
+    insert("cd /perm/pajk/git/ifs-suites/")
+    key("enter")
+
+go ifs source git:
+    insert("cd ~/ifs-source.git/")
+    key("enter")
+go ifs (scripts | scripps) git:
+    insert("cd ~/ifs-scripts.git/")
+    key("enter")
+go ifs defaults git:
+    insert("cd ~/ifs-defaults.git/")
+    key("enter")
+go ifs suites git:
+    insert("cd ~/ifs-suites.git/")
+    key("enter")
+
+# commands to be used from ifs-source branch
+go ecwam source:
+    insert("cd contrib/ecwam/src/ecwam")
+    key("enter")
+go nemo source:
+    insert("cd nemo/NEMOGCM_V40/src")
+    key("enter")
+go nemo source ice:
+    insert("cd nemo/NEMOGCM_V40/src/ICE")
+    key("enter")
+go nemo source ocean:
+    insert("cd nemo/NEMOGCM_V40/src/OCE")
+    key("enter")
+go coupla source:
+    insert("cd nemo/coupled/src")
+    key("enter")
+
+# ---------------------------------------------------------------------
