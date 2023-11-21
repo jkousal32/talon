@@ -34,7 +34,11 @@ cut   (that | dat): edit.cut()
 (paste | pace) (that | dat): edit.paste()
 chuck: edit.delete_line()
 clap: edit.line_insert_down()
-
+nap:  
+    key(end)
+    key(shift-enter)
+zimbabwe: edit.line_clone()
+    
 # Keys
 johnny: key("home")
 enta: key(enter)
@@ -42,10 +46,6 @@ enta: key(enter)
 centa: 
     key("up")
     key("down")
-
-# mouse control 
-# dog: tracking.control_toggle()
-# debug: tracking.control_debug_toggle()
 
 spotlight: key(cmd-space)
 
