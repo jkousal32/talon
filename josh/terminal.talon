@@ -188,6 +188,21 @@ open (that | dat):
     insert("open ")
     edit.paste()
     key("enter")
+gunzip (that | dat): 
+    edit.copy()
+    insert("gunzip ")
+    edit.paste()
+    key("enter")
+unzip  (that | dat): 
+    edit.copy()
+    insert(" unzip ")
+    edit.paste()
+    key("enter")
+untar (that | dat): 
+    edit.copy()
+    insert("tar xvf ")
+    edit.paste()
+    key("enter")
 
 # HPC programs
 visual: insert("ncview ")
