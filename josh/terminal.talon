@@ -92,6 +92,24 @@ history:
 #tail:
 #     insert("tail -5")
 #     key("enter")
+exit:    
+    insert("exit ")
+    key("enter")
+
+# ---------------------------------------------
+#  ksh: dirs, pushd and pop
+
+# to repeat commands in ksh
+repeat: insert("fc -s ") 
+
+# to go back directories in ksh
+pop dee: 
+    insert("popd")
+    key("enter")
+dears: 
+    insert("dirs")
+    key("enter")
+# ---------------------------------------------
 
 # vim file from grep search (hover cursor first)
 bambam:
