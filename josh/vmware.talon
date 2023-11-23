@@ -14,11 +14,9 @@ termo tab next:      key("ctrl-pagedown")
 
 termo window new:    key(ctrl-shift-n)
 
+termo tab next:      key("ctrl-pagedown")
+
 # programs
-hpc:
-    insert('hpc')
-    key(enter)
 ecflow:
     insert('ecflow_ui&')
     key(enter)
-termo tab next:      key("ctrl-pagedown")
