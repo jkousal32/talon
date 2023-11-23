@@ -21,10 +21,10 @@ hipclick:
     key(cmd:up) 
 
 # gestures
-space left: key(ctrl-left)
-space right: key(ctrl-right) 
-space up: key(ctrl-up) 
-space down: key(ctrl-down) 
+(slide | swipe) left: key(ctrl-left)
+(slide | swipe) right: key(ctrl-right) 
+(slide | swipe) up: key(ctrl-up) 
+(slide | swipe) down: key(ctrl-down) 
 
 # edit hacks
 undo  (that | dat): edit.undo()
@@ -35,8 +35,10 @@ cut   (that | dat): edit.cut()
 chuck: edit.delete_line()
 clap: edit.line_insert_down()
 nap:  
-    key(end)
+    edit.line_end()
+    sleep(50ms)
     key(shift-enter)
+shenta:   key(shift-enter)
 zimbabwe: edit.line_clone()
     
 # Keys
