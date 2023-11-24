@@ -2,7 +2,11 @@ app: VMware Horizon Client
 -
 tag():   terminal
 
-command:      key(cmd) 
+command:        key(cmd) 
+mini:           key(cmd-down) 
+big:            key(cmd-up) 
+snap left:      key(cmd-left) 
+snap right:     key(cmd-right) 
 
 termo copy:   key(ctrl-shift-c)
 termo paste:  key(ctrl-shift-v)
