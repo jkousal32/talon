@@ -3,8 +3,8 @@ app: VMware Horizon Client
 tag():   terminal
 
 command:        key(cmd) 
-mini:           key(cmd-down) 
-big:            key(cmd-up) 
+window mini:    key(cmd-down) 
+window big:     key(cmd-up) 
 snap left:      key(cmd-left) 
 snap right:     key(cmd-right) 
 

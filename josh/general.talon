@@ -5,6 +5,9 @@ jimmy: key(cmd-tab)
 swick: app.window_previous()
 brick: app.window_next()
 window quit: key(cmd-q)
+snap (center | centa): 
+    key(cmd-alt-left) 
+    key(cmd-alt-c) 
 
 # for general 
 screen (fool | full): key(ctrl-cmd-f)
@@ -21,10 +24,10 @@ hipclick:
     key(cmd:up) 
 
 # gestures
-(slide | swipe) left: key(ctrl-left)
-(slide | swipe) right: key(ctrl-right) 
-(slide | swipe) up: key(ctrl-up) 
-(slide | swipe) down: key(ctrl-down) 
+(slide | swipe) right: key(ctrl-left)
+(slide | swipe) left:  key(ctrl-right) 
+(slide | swipe) down:  key(ctrl-up) 
+(slide | swipe) up:    key(ctrl-down) 
 
 # edit hacks
 undo  (that | dat): edit.undo()
@@ -32,6 +35,7 @@ redo  (that | dat): edit.redo()
 copy  (that | dat): edit.copy()
 cut   (that | dat): edit.cut()
 (paste | pace) (that | dat): edit.paste()
+format (paste | pace): key(cmd-alt-shift-v) 
 chuck: edit.delete_line()
 clap: edit.line_insert_down()
 nap:  

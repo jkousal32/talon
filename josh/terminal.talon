@@ -26,6 +26,7 @@ copy paste:
 # basics
 copa: insert("cp -a ")
 move: insert("mv ")
+move downloads: insert("mv ~/Downloads/")
 make dir: insert("mkdir ")
 remove: insert("rm -f ")
 remove recursive: insert("rm -rf ")
@@ -168,6 +169,26 @@ copcop:
     mouse_click()
     key(cmd-shift:up)
     edit.copy()
+flimflam: 
+    key(cmd-shift:down)
+    mouse_click()
+    mouse_click()
+    key(cmd-shift:up)
+    edit.copy()
+    insert("cd ")
+    edit.paste()
+    key("enter")
+flimflam plus: 
+    key(cmd-shift:down)
+    mouse_click()
+    mouse_click()
+    key(cmd-shift:up)
+    edit.copy()
+    insert("cd ")
+    edit.paste()
+    key("enter")
+    insert("ls -ltrh --color ")
+    key("enter")
 
 push settings:
     insert("cp -a /Users/pajk/.talon/user/josh/*.csv /Users/pajk/.talon/user/settings/ ")
