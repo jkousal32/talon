@@ -45,7 +45,7 @@ def scan_small_numbers(l: list[str]) -> Iterator[Union[str, int]]:
     # reversed so that repeated pop() visits in left-to-right order
     l = [x for x in reversed(l) if x != "and"]
     while l:
-        n = l.pop()
+        n 6= l.pop()
         # fuse tens onto digits, eg. "twenty", "one" -> 21
         if n in tens_map and l and digits_map.get(l[-1], 0) != 0:
             d = l.pop()
@@ -168,13 +168,63 @@ leading_words = numbers_map.keys() - scales_map.keys()
 leading_words -= {"oh", "o"}  # comment out to enable bare/initial "oh"
 number_word_leading = f"({'|'.join(leading_words)})"
 
+# Numbers used in `number_medium` capture
+# number_medium_list = [*digit_list, *teens]
+# for ten in tens:
+#     number_medium_list.append(ten)
+#     number_medium_list.extend(f"{ten} {digit}" for digit in digit_list[1:])
 
-# Numbers used in `number_small` capture
+# for digit in digit_list[1:]:
+#     number_medium_list.append(f"{digit} hundred")
+#     for ten in tens:
+#         number_medium_list.append(f"{digit} hundred {ten}")
+#         number_medium_list.append(f"{digit} hundred and {ten}")
+
+# number_medium_map = {n: i for i, n in enumerate(number_medium_list)}
+
+
+# for digit in digit_list[1:]:
+#     i = digit_list.index(digit)
+#     number_medium_map[f"{digit} hundred"] = i * 100
+#     for ten in tens:
+#         j = tens.index(ten) + 2
+#         number_medium_map[f"{digit} hundred {ten}"]     = i * 100 + j * 10
+#         number_medium_map[f"{digit} hundred and {ten}"] = i * 100 + j * 10
+
+# mod.list("number_medium", desc="List of medium numbers")
+# ctx.lists["self.number_medium"] = number_medium_map.keys()
+
+
+# # Numbers used in `number_small` capture (original)
+# number_small_list = [*digit_list, *teens]
+# for ten in tens:
+#     number_small_list.append(ten)
+#     number_small_list.extend(f"{ten} {digit}" for digit in digit_list[1:])
+# number_small_map = {n: i for i, n in enumerate(number_small_list)}
+# 
+# mod.list("number_small", desc="List of small numbers")
+# ctx.lists["self.number_small"] = number_small_map.keys()
+
+# Numbers used in `number_small` capture (with josh's hack)
 number_small_list = [*digit_list, *teens]
 for ten in tens:
     number_small_list.append(ten)
     number_small_list.extend(f"{ten} {digit}" for digit in digit_list[1:])
+
+for digit in digit_list[1:]:
+    number_small_list.append(f"{digit} hundred")
+    for ten in tens:
+        number_small_list.append(f"{digit} hundred and {ten}")
+
 number_small_map = {n: i for i, n in enumerate(number_small_list)}
+
+for digit in digit_list[1:]:
+    i = digit_list.index(digit)
+    number_small_map[f"{digit} hundred"] = i * 100
+    for ten in tens:
+        j = tens.index(ten) + 2
+        number_small_map[f"{digit} hundred {ten}"]     = i * 100 + j * 10
+        number_small_map[f"{digit} hundred and {ten}"] = i * 100 + j * 10
 
 mod.list("number_small", desc="List of small numbers")
 ctx.lists["self.number_small"] = number_small_map.keys()
@@ -220,3 +270,14 @@ def number_signed_small(m) -> int:
     """Parses an integer between -99 and 99."""
     number = m[-1]
     return -number if (m[0] in ["negative", "minus"]) else number
+
+# @ctx.capture("number_medium", rule="{user.number_medium}")
+# def number_medium(m) -> int:
+#     return number_medium_map[m.number_medium]
+
+
+# @mod.capture(rule=f"[negative|minus] <number_medium>")
+# def number_signed_medium(m) -> int:
+    # """Parses an integer between -999 and 999."""
+    # number = m[-1]
+    # return -number if (m[0] in ["negative", "minus"]) else number
