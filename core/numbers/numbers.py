@@ -45,7 +45,7 @@ def scan_small_numbers(l: list[str]) -> Iterator[Union[str, int]]:
     # reversed so that repeated pop() visits in left-to-right order
     l = [x for x in reversed(l) if x != "and"]
     while l:
-        n 6= l.pop()
+        n = l.pop()
         # fuse tens onto digits, eg. "twenty", "one" -> 21
         if n in tens_map and l and digits_map.get(l[-1], 0) != 0:
             d = l.pop()
@@ -196,21 +196,12 @@ number_word_leading = f"({'|'.join(leading_words)})"
 
 
 # # Numbers used in `number_small` capture (original)
-# number_small_list = [*digit_list, *teens]
-# for ten in tens:
-#     number_small_list.append(ten)
-#     number_small_list.extend(f"{ten} {digit}" for digit in digit_list[1:])
-# number_small_map = {n: i for i, n in enumerate(number_small_list)}
-# 
-# mod.list("number_small", desc="List of small numbers")
-# ctx.lists["self.number_small"] = number_small_map.keys()
-
-# Numbers used in `number_small` capture (with josh's hack)
 number_small_list = [*digit_list, *teens]
 for ten in tens:
     number_small_list.append(ten)
     number_small_list.extend(f"{ten} {digit}" for digit in digit_list[1:])
 
+#  josh hack
 for digit in digit_list[1:]:
     number_small_list.append(f"{digit} hundred")
     for ten in tens:
@@ -218,6 +209,7 @@ for digit in digit_list[1:]:
 
 number_small_map = {n: i for i, n in enumerate(number_small_list)}
 
+#  josh hack
 for digit in digit_list[1:]:
     i = digit_list.index(digit)
     number_small_map[f"{digit} hundred"] = i * 100

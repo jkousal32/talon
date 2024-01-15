@@ -5,7 +5,7 @@ jimmy: key(cmd-tab)
 swick: app.window_previous()
 brick: app.window_next()
 window quit: key(cmd-q)
-snap (center | centa): 
+crap (center | centa): 
     key(cmd-alt-left) 
     key(cmd-alt-c) 
 
