@@ -27,6 +27,7 @@ copy paste:
 copa: insert("cp -a ")
 move: insert("mv ")
 move downloads: insert("mv ~/Downloads/")
+move screenshots: insert("mv /Users/pajk/Documents/screenshots/")
 make dir: insert("mkdir ")
 remove: insert("rm -f ")
 remove recursive: insert("rm -rf ")
@@ -39,6 +40,9 @@ where am I:
     key("enter")
 list downloads:
     insert("ls -ltrh --color ~/Downloads ")
+    key("enter")
+list screenshots:
+    insert("ls -ltrh --color /Users/pajk/Documents/screenshots ")
     key("enter")
 (list human | lily):
     insert("ls -lh")
@@ -274,6 +278,9 @@ hpc:
 # HPC navigation (once in HPC)
 go perm:
     insert("cd $PERM")
+    key("enter")
+go HPC perm:
+    insert("cd $HPCPERM")
     key("enter")
 go perm mars:
     insert("cd $PERM/marsData/seasonal/")
