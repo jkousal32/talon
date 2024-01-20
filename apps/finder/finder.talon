@@ -22,7 +22,7 @@ list view: key(cmd-2)
 gallery view: key(cmd-4)
 
 copy path: key(alt-cmd-c)
-trash it: key(cmd-backspace)
+trash (that | dat): key(cmd-backspace)
 
 hide [finder]: key(cmd-h)
 hide others: app.window_hide_others()

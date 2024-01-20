@@ -9,7 +9,7 @@ terminal:   key("ctrl-`")
 item [one]:   key(cmd-1)
 item two:   key(cmd-2)   
 item three: key(cmd-3)
-trash: key(cmd-backspace)
+trash (that | dat):   key(cmd-backspace)
 bookmark:   key("cmd-b")
 
 # comment/uncomment out lines in python/fortran

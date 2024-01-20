@@ -14,8 +14,8 @@ screen (fool | full): key(ctrl-cmd-f)
 screen shot: key(cmd-shift-5)
 
 # Duplication
-(clone | clon) that: edit.selection_clone()
-(clone | clon) line: edit.line_clone()
+(clone | clon) (that | dat): edit.selection_clone()
+(clone | clon) line:         edit.line_clone()
 
 # for hyperlink clicks 
 hipclick: 

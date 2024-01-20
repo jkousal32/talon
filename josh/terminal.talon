@@ -86,7 +86,7 @@ go literature:
 # programs
 open: insert("open ")
 vim: insert("vim ")
-trash: insert("trash ")
+trash (that | dat): insert("trash ")
 diff: insert("diff ")
 grep: insert("grep -i ")
 grep recursive: insert("grep -r -i ")
