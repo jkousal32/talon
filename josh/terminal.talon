@@ -26,7 +26,9 @@ copy paste:
 # basics
 copa: insert("cp -a ")
 move: insert("mv ")
-move downloads: insert("mv ~/Downloads/")
+move downloads: 
+    insert("mv ~/Downloads/ .")
+    key("left:2")
 move screenshots: insert("mv /Users/pajk/Documents/screenshots/")
 make dir: insert("mkdir ")
 remove: insert("rm -f ")

@@ -4,6 +4,13 @@ app: firefox
 bookmark:   key("cmd-b")
 history:    key("cmd-shift-h")
 
+search bar:    
+    key("cmd-l")
+    edit.line_end()
+copy url:    
+    key("cmd-l")
+    key("cmd-c")
+
 mail one:
     key("cmd-l")
     insert("https://mail.google.com/mail/u/0/#inbox")
