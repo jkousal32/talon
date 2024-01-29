@@ -12,6 +12,10 @@ crap (center | centa):
 # for general 
 screen (fool | full): key(ctrl-cmd-f)
 screen shot: key(cmd-shift-5)
+screen shot bam: 
+    key(cmd-shift-5)
+    sleep(100ms)
+    key(enter)
 
 # Duplication
 (clone | clon) (that | dat): edit.selection_clone()
@@ -37,13 +41,8 @@ cut   (that | dat): edit.cut()
 (paste | pace) (that | dat): edit.paste()
 format (paste | pace): key(cmd-alt-shift-v) 
 chuck: edit.delete_line()
-clap: edit.line_insert_down()
-nap:  
-    edit.line_end()
-    sleep(50ms)
-    key(shift-enter)
-shenta:   key(shift-enter)
 zimbabwe: edit.line_clone()
+file save as: key(cmd-shift-s) 
     
 # Keys
 johnny: key("home")

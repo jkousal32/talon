@@ -3,6 +3,8 @@ app: vscode
 
 tag(): terminal
 
+clap: edit.line_insert_down()
+
 search: key(cmd-shift-f) 
 files:  key(cmd-shift-e)
 terminal:   key("ctrl-`")

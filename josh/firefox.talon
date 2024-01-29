@@ -4,6 +4,8 @@ app: firefox
 bookmark:   key("cmd-b")
 history:    key("cmd-shift-h")
 
+clap: edit.line_insert_down()
+
 search bar:    
     key("cmd-l")
     edit.line_end()

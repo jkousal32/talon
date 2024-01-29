@@ -1,6 +1,13 @@
 tag: terminal
 -
 
+clap: edit.line_insert_down()
+
+tab close bam: 
+    key(cmd-w)
+    sleep(100ms)
+    key(enter)
+    
 lisa: user.terminal_list_directories()
 lisa all: user.terminal_list_all_directories()
 katie [dir] [<user.text>]: user.terminal_change_directory(text or "")
@@ -261,8 +268,8 @@ jump:
 # HPC programs (once in HPC)
 visual: insert("ncview ")
 dump  : insert("ncdump -h ")
-que cancel: insert("scancel ")
-que sub:    insert("sbatch ")
+que (cancel | dell): insert("scancel ")
+que sub:             insert("sbatch ")
 que stat:
     insert("preprun pajk")
     key("enter")
@@ -288,7 +295,7 @@ go perm mars:
     insert("cd $PERM/marsData/seasonal/")
     key("enter")
 go script mars:
-    insert("cd ~/scripts/mars/seasonal/")
+    insert("cd ~/scripts/get/mars/seasonal/")
     key("enter")
 go vol:
     insert("cd /ec/vol/ifs/rd/pajk/")

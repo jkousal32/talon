@@ -2,6 +2,8 @@ app: VMware Horizon Client
 -
 tag():   terminal
 
+clap: edit.line_insert_down()
+
 command:        key(cmd) 
 window mini:    key(cmd-down) 
 window big:     key(cmd-up) 
