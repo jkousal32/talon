@@ -44,7 +44,7 @@ crick: key(ctrl-c)
 where am I:
     insert("pwd")
     key("enter")
-(list | lauri):
+lauri:
     insert("ls -ltrh --color ")
     key("enter")
 list downloads:
@@ -59,7 +59,7 @@ list screenshots:
 (list size | doosha):
     insert("du -sh *")
     key("enter")
-tree:
+tree simple:
     insert("tree -L 2")
     key("enter")
 tree detailed:
@@ -67,7 +67,7 @@ tree detailed:
     key("enter")
 
 # navigation
-go home:
+go (home | hommy):
     insert('cd ~')
     key("enter")
 go work:
@@ -93,13 +93,12 @@ go literature:
     key("enter")
 
 # programs
-open: insert("open ")
-vim: insert("vim ")
-trash (that | dat): insert("trash ")
-diff: insert("diff ")
-grep: insert("grep -i ")
+# open: insert("open ")
+# vim: insert("vim ")
+# diff: insert("diff ")
+# grep: insert("grep -i ")
 grep recursive: insert("grep -r -i ")
-find file: insert("find . -name ")
+file find: insert("find . -name ")
 history:    
     insert("history ")
     key("enter")
@@ -172,11 +171,23 @@ untar (that | dat):
     insert("tar xvf ")
     edit.paste()
     key("enter")
+trash (that | dat): 
+    edit.copy()
+    insert("trash ")
+    edit.paste()
+    key("enter")
 
 # random
+open bam: 
+    key(cmd-shift:down)
+    mouse_click()
+    mouse_click()
+    key(cmd-shift:up)
+    edit.copy()
+    insert("open ")
+    edit.paste()
+    key("enter")
 copcop: 
-#     mouse_click()
-#     sleep(800ms)
     key(cmd-shift:down)
     mouse_click()
     mouse_click()
@@ -282,7 +293,9 @@ jupiter cancel:
 hpc:
     insert("ssh hpc2020-login")
     key("enter")
-
+job status:
+    insert("jobs")
+    key("enter")
 
 # HPC navigation (once in HPC)
 go perm:
@@ -304,26 +317,26 @@ go vol:
 go ifs source:
     insert("cd /perm/pajk/git/ifs-source/")
     key("enter")
-go ifs (scripts | scripps):
+go ifs (scripts | scripps | scripp):
     insert("cd /perm/pajk/git/ifs-scripts/")
     key("enter")
-go ifs defaults:
+go ifs (defaults | default):
     insert("cd /perm/pajk/git/ifs-defaults/")
     key("enter")
-go ifs suites:
+go ifs (suites | suite):
     insert("cd /perm/pajk/git/ifs-suites/")
     key("enter")
 
 go ifs source git:
     insert("cd ~/ifs-source.git/")
     key("enter")
-go ifs (scripts | scripps) git:
+go ifs (scripts | scripps | scripp) git:
     insert("cd ~/ifs-scripts.git/")
     key("enter")
-go ifs defaults git:
+go ifs (defaults | default) git:
     insert("cd ~/ifs-defaults.git/")
     key("enter")
-go ifs suites git:
+go ifs (suites | suite) git:
     insert("cd ~/ifs-suites.git/")
     key("enter")
 

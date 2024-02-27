@@ -26,6 +26,10 @@ hipclick:
     key(cmd:down)
     mouse_click()
     key(cmd:up) 
+multiclick: 
+    key(shift:down)
+    mouse_click()
+    key(shift:up) 
 
 # gestures
 (slide | swipe) right: key(ctrl-left)
@@ -65,6 +69,7 @@ square [left]: key("[")
 square right : key("]")
 angle  [left]: key("<")
 angle  right : key(">")
+dubby        : key('"')
 
 welly (down | dee): user.mouse_scroll_down()
 welly up:           user.mouse_scroll_up()

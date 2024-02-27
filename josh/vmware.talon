@@ -26,3 +26,9 @@ termo tab next:      key("ctrl-pagedown")
 ecflow:
     insert('ecflow_ui&')
     key(enter)
+prepIFS:
+    insert('prepIFS')
+    key(enter)
+meld:
+    insert('meld&')
+    key(enter)

@@ -5,6 +5,7 @@ tag(): terminal
 
 clap: edit.line_insert_down()
 
+commands: key(cmd-shift-p) 
 search: key(cmd-shift-f) 
 files:  key(cmd-shift-e)
 terminal:   key("ctrl-`")
