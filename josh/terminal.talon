@@ -93,8 +93,8 @@ go literature:
     key("enter")
 
 # programs
-# open: insert("open ")
-# vim: insert("vim ")
+open: insert("open ")
+vim: insert("vim ")
 # diff: insert("diff ")
 # grep: insert("grep -i ")
 grep recursive: insert("grep -r -i ")
@@ -293,7 +293,7 @@ jupiter cancel:
 hpc:
     insert("ssh hpc2020-login")
     key("enter")
-job status:
+status jobs:
     insert("jobs")
     key("enter")
 

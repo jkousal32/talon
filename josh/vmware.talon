@@ -5,7 +5,7 @@ tag():   terminal
 clap: edit.line_insert_down()
 
 command:        key(cmd) 
-window mini:    key(cmd-down) 
+window (mini|small):    key(cmd-down) 
 window big:     key(cmd-up) 
 snap left:      key(cmd-left) 
 snap right:     key(cmd-right) 

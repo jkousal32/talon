@@ -1,4 +1,4 @@
-app: /Microsoft Teams Classic/i
+app: /Microsoft Teams*/i
 -
 
 clap:

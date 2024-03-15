@@ -67,6 +67,7 @@ words_to_exclude = [
     "terminal",
     "visual",
     "windows",
+    "(work or school)"
 ]
 
 # on Windows, WindowsApps are not like normal applications, so

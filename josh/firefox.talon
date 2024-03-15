@@ -27,3 +27,11 @@ mail three:
     key("cmd-l")
     insert("https://outlook.office.com/mail/")
     key("enter")
+calendar:
+    key("cmd-l")
+    insert("https://outlook.office.com/calendar/view/month")
+    key("enter")
+status (ECMWF | eck):
+    key("cmd-l")
+    insert("https://www.ecmwf.int/en/service-status")
+    key("enter")
