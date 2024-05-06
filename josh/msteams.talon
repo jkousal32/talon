@@ -7,3 +7,6 @@ clap:
     key(shift-enter)
 
 shenta: key(shift-enter)
+
+zoom in:  key("command" - "=")
+zoom out: key("command" - "-")

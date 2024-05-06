@@ -36,6 +36,11 @@ move: insert("mv ")
 move downloads: 
     insert("mv ~/Downloads/ .")
     key("left:2")
+move downloads file: 
+    insert("mv ~/Downloads/ .")
+    key("left:2")
+    edit.paste()
+    key("enter")
 move screenshots: insert("mv /Users/pajk/Documents/screenshots/")
 make dir: insert("mkdir ")
 remove: insert("rm -f ")

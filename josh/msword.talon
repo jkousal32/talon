@@ -7,3 +7,5 @@ clap:
     key(shift-enter)
 
 shenta: key(shift-enter)
+
+comment add: key(cmd-alt-a)
