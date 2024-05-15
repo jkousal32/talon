@@ -6,6 +6,9 @@ history:    key("cmd-shift-h")
 
 clap: edit.line_insert_down()
 
+#(previously shenta)
+shammy: key(shift-enter)
+
 search bar:    
     key("cmd-l")
     sleep(200ms)

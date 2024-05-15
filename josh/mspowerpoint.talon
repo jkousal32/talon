@@ -6,7 +6,8 @@ clap:
     sleep(50ms)
     key(shift-enter)
 
-shenta: key(shift-enter)
+#(previously shenta)
+shammy: key(shift-enter)
 
 slide show:         key(f5)
 slide show current: key(shift-f5)
