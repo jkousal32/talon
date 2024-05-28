@@ -192,13 +192,15 @@ open bam:
     insert("open ")
     edit.paste()
     key("enter")
-copcop: 
+# copcop: 
+coco: 
     key(cmd-shift:down)
     mouse_click()
     mouse_click()
     key(cmd-shift:up)
     edit.copy()
-flimflam: 
+# flimflam: 
+yoyo: 
     key(cmd-shift:down)
     mouse_click()
     mouse_click()
@@ -207,7 +209,7 @@ flimflam:
     insert("cd ")
     edit.paste()
     key("enter")
-flimflam plus: 
+yoyo plus: 
     key(cmd-shift:down)
     mouse_click()
     mouse_click()
@@ -331,6 +333,9 @@ go ifs (defaults | default):
 go ifs (suites | suite):
     insert("cd /perm/pajk/git/ifs-suites/")
     key("enter")
+go ifs bundle:
+    insert("cd /perm/pajk/git/ifs-bundle/")
+    key("enter")
 
 go ifs source git:
     insert("cd ~/ifs-source.git/")
@@ -343,6 +348,9 @@ go ifs (defaults | default) git:
     key("enter")
 go ifs (suites | suite) git:
     insert("cd ~/ifs-suites.git/")
+    key("enter")
+go ifs bundle git:
+    insert("cd ~/ifs-bundle.git/")
     key("enter")
 
 # commands to be used from ifs-source branch
