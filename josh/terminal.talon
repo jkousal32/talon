@@ -52,6 +52,11 @@ where am I:
 lauri:
     insert("ls -ltrh --color ")
     key("enter")
+lauri that:
+    edit.copy()
+    insert("ls -ltrh --color ")
+    edit.paste()
+    key("enter")    
 list downloads:
     insert("ls -ltrh --color ~/Downloads ")
     key("enter")

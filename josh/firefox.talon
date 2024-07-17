@@ -38,3 +38,19 @@ status (ECMWF | eck):
     key("cmd-l")
     insert("https://www.ecmwf.int/en/service-status")
     key("enter")
+google translate:
+    key("cmd-l")
+    insert("https://translate.google.com/?sl=auto&tl=en&op=translate")
+    key("enter")
+
+sign off informal:
+    insert("Cheers,")
+    key("enter")
+    insert("Josh")
+sign off formal:
+    insert("Regards,")
+    key("enter")
+    insert("Josh")
+
+# only for google translate
+language swap:    key("cmd-shift-s")
