@@ -7,7 +7,7 @@ git cam [<user.prose>]:
     key("right")
 
 # specific to the IFS
-git ifsbranch that:
+git (ifs|if) branch that:
     edit.copy()
     insert("git ifsbranch -B  ")
     edit.paste()
@@ -15,5 +15,5 @@ git ifsbranch that:
     edit.paste()
     insert(" -J ")
     key("left:4")
-git ifsbranch:    insert("git ifsbranch ")
-git ifsremote:    insert("git ifsremote ")
+git (ifs|if) branch:    insert("git ifsbranch ")
+git (ifs|if) remote:    insert("git ifsremote ")

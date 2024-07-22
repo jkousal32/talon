@@ -331,35 +331,35 @@ go vol:
     insert("cd /ec/vol/ifs/rd/pajk/")
     key("enter")
     
-go ifs source:
+go (ifs|if) source:
     insert("cd /perm/pajk/git/ifs-source/")
     key("enter")
-go ifs (scripts | scripps | scripp):
+go (ifs|if) (scripts | scripps | scripp):
     insert("cd /perm/pajk/git/ifs-scripts/")
     key("enter")
-go ifs (defaults | default):
+go (ifs|if) (defaults | default):
     insert("cd /perm/pajk/git/ifs-defaults/")
     key("enter")
-go ifs (suites | suite):
+go (ifs|if) (suites | suite):
     insert("cd /perm/pajk/git/ifs-suites/")
     key("enter")
-go ifs bundle:
+go (ifs|if) bundle:
     insert("cd /perm/pajk/git/ifs-bundle/")
     key("enter")
 
-go ifs source git:
+go (ifs|if) source git:
     insert("cd ~/ifs-source.git/")
     key("enter")
-go ifs (scripts | scripps | scripp) git:
+go (ifs|if) (scripts | scripps | scripp) git:
     insert("cd ~/ifs-scripts.git/")
     key("enter")
-go ifs (defaults | default) git:
+go (ifs|if) (defaults | default) git:
     insert("cd ~/ifs-defaults.git/")
     key("enter")
-go ifs (suites | suite) git:
+go (ifs|if) (suites | suite) git:
     insert("cd ~/ifs-suites.git/")
     key("enter")
-go ifs bundle git:
+go (ifs|if) bundle git:
     insert("cd ~/ifs-bundle.git/")
     key("enter")
 
