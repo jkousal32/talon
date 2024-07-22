@@ -1,5 +1,9 @@
 -
 settings():
+
+    # Control how long talon waits before executing a command
+    speech.timeout=0.3
+
     # Adjust the scale of the imgui to my liking
     imgui.scale = 1.3
 

@@ -45,7 +45,7 @@ move screenshots: insert("mv /Users/pajk/Documents/screenshots/")
 make dir: insert("mkdir ")
 remove: insert("rm -f ")
 remove recursive: insert("rm -rf ")
-crick: key(ctrl-c)
+(cricket | crick it): key(ctrl-c)
 where am I:
     insert("pwd")
     key("enter")
@@ -118,6 +118,11 @@ history:
 exit:    
     insert("exit ")
     key("enter")
+python:      insert("python3.8 ")
+pip install: insert("pip3.8 install ")
+xdg open: insert("xdg-open ")
+r sink :    insert("rsync -a ")
+r sink hpc: insert("rsync -a hpc:")
 
 # ---------------------------------------------
 #  ksh: dirs, pushd and pop
