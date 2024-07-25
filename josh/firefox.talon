@@ -43,6 +43,13 @@ google translate:
     insert("https://translate.google.com/?sl=auto&tl=en&op=translate")
     key("enter")
 
+# emails
+greeting one:
+    insert("Hi ,")
+    key(left)
+greeting two:
+    insert("Hello ,")
+    key(left)
 sign off informal:
     insert("Cheers,")
     key("enter")

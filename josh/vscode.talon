@@ -40,3 +40,5 @@ go way up:
     key(ctrl-g)
     key(1)
     key(enter)
+
+settings: key(cmd-,)
