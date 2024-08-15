@@ -64,3 +64,17 @@ rommy: key("cmd-/")
 (cell | sell) down:
     key("escape")
     key("down")
+(cell | sell) enter:
+    key("escape")
+    key("enter")
+    key("up")
+    key("down")
+find function bam:
+    mouse_click()
+    mouse_click()
+    edit.copy()
+    key(cmd-f)
+    edit.paste()
+    sleep(200ms)
+    key(cmd-left)
+    insert("def ")

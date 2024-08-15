@@ -2,7 +2,7 @@
 	"cluck": {
 		"sounds": ["cluck"],
 		"threshold": {
-			">power": 10,
+			">power": 50,
 			">probability": 0.999
 		},
 		"throttle": {      
@@ -13,7 +13,7 @@
 	"clack": {
 		"sounds": ["clack"],
 		"threshold": {
-			">power": 10,
+			">power": 50,
 			">probability": 0.999
 		},
 		"throttle": {
@@ -52,7 +52,7 @@
 	"pop": {
 		"sounds": ["pop"],
 		"threshold": {
-			">power": 5,
+			">power": 10,
 			">probability": 0.999
 		},
 		"throttle": {

@@ -297,6 +297,14 @@ jump:
 visual: insert("ncview ")
 dump  : insert("ncdump -h ")
 que (cancel | dell): insert("scancel ")
+que (cancel | dell) bam:
+    mouse_click()
+    mouse_click()
+    edit.copy()
+    insert("scancel ")
+    sleep(200ms)
+    edit.paste()
+    key("enter")
 que sub:             insert("sbatch ")
 que stat:
     insert("preprun pajk")
@@ -321,7 +329,7 @@ go perm:
 go HPC perm:
     insert("cd $HPCPERM")
     key("enter")
-go perm mars:
+go (perm | per) mars:
     insert("cd $PERM/marsData/seasonal/")
     key("enter")
 go script mars:

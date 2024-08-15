@@ -8,14 +8,9 @@ tag(): user.python
 
 rommy: key("cmd-/")
 
-# (kernel | colonel) restart: 
-#     key("escape")
-#     key("0")
-#     key("0")
-# (kernel | colonel) (interrupt | break): 
-#     key("escape")
-#     key("i")
-#     key("i")
+(kernel | colonel) (interrupt | break): key("ctrl-i")
+(kernel | colonel) restart:             key("ctrl-u")
+(kernel | colonel) run all:             key("ctrl-y")
 
 (cell | sell) above:
     key("escape")
