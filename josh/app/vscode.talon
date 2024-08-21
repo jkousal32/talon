@@ -2,6 +2,7 @@ app: vscode
 -
 
 tag(): terminal
+tag(): user.terminalhpc
 
 clap: edit.line_insert_down()
 

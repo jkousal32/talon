@@ -69,7 +69,7 @@ rommy: key("cmd-/")
     key("enter")
     key("up")
     key("down")
-find function bam:
+(find function  | function find):
     mouse_click()
     mouse_click()
     edit.copy()

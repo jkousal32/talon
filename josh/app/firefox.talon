@@ -1,13 +1,12 @@
 app: firefox
 -
 
+tag(): user.comms
+tag(): user.editPatch
+
 bookmark:   key("cmd-b")
 history:    key("cmd-shift-h")
 
-clap: edit.line_insert_down()
-
-#(previously shenta)
-shammy: key(shift-enter)
 
 search bar:    
     key("cmd-l")
@@ -42,22 +41,6 @@ google translate:
     key("cmd-l")
     insert("https://translate.google.com/?sl=auto&tl=en&op=translate")
     key("enter")
-
-# emails
-greeting one:
-    insert("Hi ,")
-    key(left)
-greeting two:
-    insert("Hello ,")
-    key(left)
-sign off informal:
-    insert("Cheers,")
-    key("enter")
-    insert("Josh")
-sign off formal:
-    insert("Regards,")
-    key("enter")
-    insert("Josh")
 
 # only for google translate
 language swap:    key("cmd-shift-s")
