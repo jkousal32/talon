@@ -7,7 +7,6 @@ tag(): user.editPatch
 bookmark:   key("cmd-b")
 history:    key("cmd-shift-h")
 
-
 search bar:    
     key("cmd-l")
     sleep(200ms)
@@ -40,6 +39,30 @@ status (ECMWF | eck):
 google translate:
     key("cmd-l")
     insert("https://translate.google.com/?sl=auto&tl=en&op=translate")
+    key("enter")
+go (ifs|if) source:
+    key("cmd-l")
+    insert("https://git.ecmwf.int/users/pajk/repos/ifs-source/browse")
+    key("enter")
+go ecwam source:
+    key("cmd-l")
+    insert("https://git.ecmwf.int/users/pajk/repos/ecwam/browse")
+    key("enter")
+go (ifs|if) (scripts | scripps | scripp):
+    key("cmd-l")
+    insert("https://git.ecmwf.int/users/pajk/repos/ifs-scripts/browse")
+    key("enter")
+go (ifs|if) (defaults | default):
+    key("cmd-l")
+    insert("https://git.ecmwf.int/users/pajk/repos/ifs-defaults/browse")
+    key("enter")
+go (ifs|if) (suites | suite):
+    key("cmd-l")
+    insert("https://git.ecmwf.int/users/pajk/repos/ifs-suites/browse")
+    key("enter")
+go (ifs|if) bundle:
+    key("cmd-l")
+    insert("https://git.ecmwf.int/users/pajk/repos/ifs-bundle/browse")
     key("enter")
 
 # only for google translate

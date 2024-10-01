@@ -52,6 +52,9 @@ lauri that:
 list downloads:
     insert("ls -ltrh --color ~/Downloads ")
     key("enter")
+list (dirs | dears):
+    insert("ls -ltrh --color -d **")
+    key(left)
 (list human | lily):
     insert("ls -lh")
     key("enter")
@@ -86,7 +89,7 @@ vim: insert("vim ")
 grep recursive: insert("grep -r -i ")
 file find: insert("find . -name ")
 history:    
-    insert("history ")
+    insert("history 100")
     key("enter")
 exit:    
     insert("exit ")

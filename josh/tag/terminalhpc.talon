@@ -16,7 +16,7 @@ go (perm | per) mars:
 go script mars:
     insert("cd ~/scripts/get/mars/seasonal/")
     key("enter")
-go vol:
+go ec vol:
     insert("cd /ec/vol/ifs/rd/pajk/")
     key("enter")
   
@@ -74,6 +74,7 @@ go coupla source:
 
 visual: insert("ncview ")
 dump  : insert("ncdump -h ")
+grib list  : insert("grib_ls ")
 que (cancel | dell): insert("scancel ")
 que (cancel | dell) bam:
     mouse_click()
