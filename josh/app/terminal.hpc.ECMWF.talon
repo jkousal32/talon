@@ -2,8 +2,11 @@ app: terminal
 title: /hpc/
 -
 
+# ECMWF HPC
+
 tag(): terminal
 tag(): user.terminalhpc
+# tag(): user.terminalNavi # don't use, ECMWF internal commands are better
 
 # ------------------------------------------------
 # basics

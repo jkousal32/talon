@@ -1,6 +1,9 @@
 tag: terminal
 -
-    
+# ------------------------------------------------
+# general terminal functions
+# ------------------------------------------------
+
 lisa: user.terminal_list_directories()
 lisa all: user.terminal_list_all_directories()
 katie [dir] [<user.text>]: user.terminal_change_directory(text or "")
@@ -72,6 +75,8 @@ tab close bam:
     key(cmd-w)
     sleep(100ms)
     key(enter)
+diff:
+    insert("diff -y --suppress-common-lines ")
 
 # ------------------------------------------------
 # navigation

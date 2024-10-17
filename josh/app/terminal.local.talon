@@ -3,6 +3,7 @@ title: /zsh/
 -
 
 tag(): terminal
+tag(): user.terminalNavi
 
 # ------------------------------------------------
 # basics
@@ -26,7 +27,7 @@ go work:
     insert('cd ~/"OneDrive - ECMWF"/josh')
     key("enter")
 go uni:
-    insert('cd ~/"OneDrive - The University of Melbourne"')
+    insert('cd ~/"OneDrive - ECMWF"/josh/unimelb')
     key("enter")
 go talon:
     insert("cd /Users/pajk/.talon/user")
@@ -35,7 +36,7 @@ go screenshots:
     insert("cd /Users/pajk/Documents/screenshots")
     key("enter")
 go literature:
-    insert("cd '/Users/pajk/OneDrive - The University of Melbourne/phd/literature'")
+    insert('cd ~/"OneDrive - ECMWF"/josh/unimelb/phd/literature')
     key("enter")
 
 # ------------------------------------------------
@@ -60,18 +61,6 @@ trash (that | dat):
     edit.copy()
     insert("trash ")
     edit.paste()
-    key("enter")
-# flimflam: 
-yoyo: 
-    key(cmd-shift:down)
-    mouse_click()
-    mouse_click()
-    key(cmd-shift:up)
-    edit.copy()
-    insert("cd ")
-    edit.paste()
-    key("enter")
-    insert("ls -ltrh --color ")
     key("enter")
 
 # ------------------------------------------------
