@@ -6,6 +6,7 @@ title: /hpc/
 
 tag(): terminal
 tag(): user.terminalhpc
+tag(): user.terminalhpc.ec
 # tag(): user.terminalNavi # don't use, ECMWF internal commands are better
 
 # ------------------------------------------------

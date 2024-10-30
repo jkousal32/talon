@@ -44,10 +44,10 @@ remove recursive: insert("rm -rf ")
 where am I:
     insert("pwd")
     key("enter")
-lauri:
+(lauri | loppy):
     insert("ls -ltrh --color ")
     key("enter")
-lauri that:
+(lauri | loppy) (that | dat):
     edit.copy()
     insert("ls -ltrh --color ")
     edit.paste()
@@ -90,8 +90,6 @@ go downloads:
 # ------------------------------------------------
 # programs
 
-vim: insert("vim ")
-grep recursive: insert("grep -r -i ")
 file find: insert("find . -name ")
 history:    
     insert("history 100")
@@ -103,7 +101,12 @@ python:      insert("python3.8 ")
 pip install: insert("pip3.8 install ")
 r sink :     insert("rsync -a ")
 r sink hpc:  insert("rsync -a hpc:")
+s copa :     insert("scp ")
+scp :        insert("scp ")
+scp hpc:     insert("scp hpc:")
 
+grep recursive: 
+    insert("grep -r -i ")
 grep (that | dat): 
     edit.copy()
     insert("grep -r -i ")
@@ -114,6 +117,8 @@ katie (that | dat):
     insert("cd ")
     edit.paste()
     key("enter")
+vim: 
+    insert("vim ")
 (vimmy | vim)  (that | dat): 
     edit.copy()
     insert("vim ")
@@ -133,6 +138,16 @@ untar (that | dat):
     edit.copy()
     insert("tar xvf ")
     edit.paste()
+    key("enter")
+permissions :
+    insert("chmod +x ")
+permissions (that | dat): 
+    edit.copy()
+    insert("chmod +x ")
+    edit.paste()
+    key("enter")
+status jobs:
+    insert("jobs")
     key("enter")
 # copcop: 
 coco: 

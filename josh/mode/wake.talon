@@ -1,3 +1,3 @@
 mode: sleep
 -
-parrot(cluck): speech.enable()
+wake up: speech.enable()

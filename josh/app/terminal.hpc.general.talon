@@ -7,6 +7,7 @@ title: /gadi/
 
 tag(): terminal
 tag(): user.terminalNavi
+tag(): user.terminalhpc
 
 # ------------------------------------------------
 # basics

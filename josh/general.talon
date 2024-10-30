@@ -4,7 +4,10 @@
 jimmy: key(cmd-tab)
 swick: app.window_previous()
 brick: app.window_next()
-window quit: key(cmd-q)
+window quit: 
+    key(cmd-q:down)
+    sleep(1000ms)
+    key(cmd-q:up)
 crap (center | centa): 
     key(cmd-alt-left) 
     key(cmd-alt-c) 
