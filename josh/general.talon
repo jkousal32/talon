@@ -63,6 +63,10 @@ centa:
     key("down")
 
 spotlight: key(cmd-space)
+spotlight sound: 
+    key(cmd-space)
+    insert("sound")
+    key(enter)
 
 indent: key("tab")
 undent: key("shift-tab")

@@ -15,3 +15,5 @@ sign off formal:
     insert("Regards,")
     key("enter")
     insert("Josh")
+postscript:
+    insert("P. S. ")

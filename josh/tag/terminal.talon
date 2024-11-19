@@ -44,30 +44,31 @@ remove recursive: insert("rm -rf ")
 where am I:
     insert("pwd")
     key("enter")
-(lauri | loppy):
+loppy:
     insert("ls -ltrh --color ")
     key("enter")
-(lauri | loppy) (that | dat):
+loppy (that | dat):
     edit.copy()
     insert("ls -ltrh --color ")
     edit.paste()
+    sleep(100ms)
     key("enter")    
-list downloads:
+(list | loppy) downloads:
     insert("ls -ltrh --color ~/Downloads ")
     key("enter")
-list (dirs | dears):
+(list | loppy) (dirs | dears):
     insert("ls -ltrh --color -d **")
     key(left)
-(list human | lily):
-    insert("ls -lh")
+((list | loppy) human | lily):
+    insert("ls -lh --color")
     key("enter")
-(list size | doosha):
+((list | loppy) size | doosha):
     insert("du -sh *")
     key("enter")
-tree simple:
+tree level two:
     insert("tree -L 2")
     key("enter")
-tree detailed:
+tree level three:
     insert("tree -L 3")
     key("enter")
 clap: edit.line_insert_down()
@@ -86,10 +87,14 @@ go (home | hommy):
 go downloads:
     insert("cd ~/Downloads")
     key("enter")
+go talon:
+    insert("cd /Users/pajk/.talon/user")
+    key("enter")
 
 # ------------------------------------------------
 # programs
 
+# (file hunt)
 file find: insert("find . -name ")
 history:    
     insert("history 100")
@@ -124,6 +129,12 @@ vim:
     insert("vim ")
     edit.paste()
     key("enter")
+(vimmy | vim)  (that | dat) bam: 
+    edit.copy()
+    insert("vim ")
+    edit.paste()
+    key("backspace")    
+    key("enter")    
 gunzip (that | dat): 
     edit.copy()
     insert("gunzip ")

@@ -17,8 +17,8 @@ go perm:
 # ------------------------------------------------
 # programs
 
-visual: insert("ncview ")
-dump  : insert("ncdump -h ")
+net c vis : insert("ncview ")
+net c dump: insert("ncdump -h ")
 module list  : 
     insert("module list ")
     key("enter")

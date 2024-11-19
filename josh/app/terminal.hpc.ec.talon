@@ -6,7 +6,7 @@ title: /hpc/
 
 tag(): terminal
 tag(): user.terminalhpc
-tag(): user.terminalhpc.ec
+tag(): user.terminalhpcEC
 # tag(): user.terminalNavi # don't use, ECMWF internal commands are better
 
 # ------------------------------------------------
@@ -18,12 +18,6 @@ tag(): user.terminalhpc.ec
 # ------------------------------------------------
 # programs
 
-open:    insert("xdg-open ")
-open (that | dat): 
-    edit.copy()
-    insert("xdg-open ")
-    edit.paste()
-    key("enter")
 # flimflam: 
 yoyo: 
     key(cmd-shift:down)

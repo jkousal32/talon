@@ -1,6 +1,13 @@
 app: VMware Horizon Client
 -
 
+tag(): terminal
+tag(): user.terminalhpc
+tag(): user.terminalhpcEC
+# tag(): user.terminalNavi # don't use, ECMWF internal commands are better
+
+# ------------------------------------------------
+
 clap: edit.line_insert_down()
 
 command:        key(cmd) 
@@ -14,9 +21,6 @@ refresh it:     key(f5)
 # ------------------------------------------------
 # ------------------------------------------------
 # terminal
-
-tag(): terminal
-tag(): user.terminalhpc
 
 # ------------------------------------------------
 # basics
@@ -32,6 +36,7 @@ termo window new:    key(ctrl-shift-n)
 
 # ------------------------------------------------
 # programs
+
 ecflow:
     insert('ecflow_ui&')
     key(enter)
