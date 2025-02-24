@@ -65,6 +65,7 @@ centa:
 spotlight: key(cmd-space)
 spotlight sound: 
     key(cmd-space)
+    sleep(200ms)
     insert("sound")
     key(enter)
 

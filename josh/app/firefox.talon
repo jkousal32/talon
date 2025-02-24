@@ -4,7 +4,7 @@ app: firefox
 tag(): user.comms
 tag(): user.editPatch
 
-bookmark:   key("cmd-b")
+(bookmark | bookie muck):   key("cmd-b")
 history:    key("cmd-shift-h")
 
 search bar:    
@@ -46,7 +46,7 @@ go (ifs|if) source:
     key("enter")
 go ecwam source:
     key("cmd-l")
-    insert("https://git.ecmwf.int/users/pajk/repos/ecwam/browse")
+    insert("https://github.com/jkousal32/ecwam")
     key("enter")
 go (ifs|if) (scripts | scripps | scripp):
     key("cmd-l")

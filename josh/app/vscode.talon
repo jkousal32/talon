@@ -18,7 +18,7 @@ item [one]:   key(cmd-1)
 item two:   key(cmd-2)   
 item three: key(cmd-3)
 trash (that | dat):   key(cmd-backspace)
-bookmark:   key("cmd-b")
+(bookmark | bookie muck):   key("cmd-b")
 
 # comment/uncomment out lines in python/fortran
 # was previously commy
@@ -40,10 +40,18 @@ bommy:
     user.delete_right()    
     user.delete_right()    
 
-# hack to fix broken go way up command
+settings: key(cmd-,)
+
+# ------------------------------------------------
+# patches
+
+katie: 
+    insert("cd ")
+katie (up | back): 
+    insert("cd ../")
+    key(enter)
+
 go way up:
     key(ctrl-g)
     key(1)
     key(enter)
-
-settings: key(cmd-,)

@@ -32,7 +32,7 @@ move: insert("mv ")
 move downloads: 
     insert("mv ~/Downloads/ .")
     key("left:2")
-move downloads file: 
+move downloads bam: 
     insert("mv ~/Downloads/ .")
     key("left:2")
     edit.paste()
@@ -45,12 +45,22 @@ where am I:
     insert("pwd")
     key("enter")
 loppy:
-    insert("ls -ltrh --color ")
+    insert("ls -ltrh  --color ")
+    key("enter")
+loppy all:
+    insert("ls -ltrha --color ")
     key("enter")
 loppy (that | dat):
     edit.copy()
     insert("ls -ltrh --color ")
     edit.paste()
+    sleep(100ms)
+    key("enter")    
+loppy (that | dat) star:
+    edit.copy()
+    insert("ls -ltrh --color *")
+    edit.paste()
+    insert("*")
     sleep(100ms)
     key("enter")    
 (list | loppy) downloads:
@@ -106,9 +116,7 @@ python:      insert("python3.8 ")
 pip install: insert("pip3.8 install ")
 r sink :     insert("rsync -a ")
 r sink hpc:  insert("rsync -a hpc:")
-s copa :     insert("scp ")
-scp :        insert("scp ")
-scp hpc:     insert("scp hpc:")
+echo :       insert("echo ")
 
 grep recursive: 
     insert("grep -r -i ")
@@ -120,6 +128,14 @@ grep (that | dat):
 katie (that | dat): 
     edit.copy()
     insert("cd ")
+    edit.paste()
+    key("enter")
+scp: 
+    insert("scp hpc: .")
+    key("left:2")
+scp (that | dat): 
+    insert("scp hpc: .")
+    key("left:2")
     edit.paste()
     key("enter")
 vim: 

@@ -16,6 +16,8 @@ window big:     key(cmd-up)
 snap left:      key(cmd-left) 
 snap right:     key(cmd-right) 
 refresh it:     key(f5) 
+zoom out:       key(ctrl--) 
+zoom in:        key(ctrl-+) 
 
 # ------------------------------------------------
 # ------------------------------------------------
@@ -37,7 +39,7 @@ termo window new:    key(ctrl-shift-n)
 # ------------------------------------------------
 # programs
 
-ecflow:
+e c flow:
     insert('ecflow_ui&')
     key(enter)
 prepIFS:

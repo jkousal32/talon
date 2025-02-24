@@ -2,7 +2,7 @@ app: chrome
 
 -
 
-bookmark:   key("cmd-b")
+(bookmark | bookie muck):   key("cmd-b")
 history:    key("cmd-shift-h")
 
 clap: edit.line_insert_down()

@@ -19,21 +19,27 @@ go script mars:
 go ec vol:
     insert("cd /ec/vol/ifs/rd/pajk/")
     key("enter")
-  
+go ssd:
+    insert("cd $LOCALSSD")
+    key("enter")
+
 go (ifs|if) source:
-    insert("cd /perm/pajk/git/ifs-source/")
+    insert("cd $LOCALSSD/ifs-source/")
     key("enter")
 go (ifs|if) (scripts | scripps | scripp):
-    insert("cd /perm/pajk/git/ifs-scripts/")
+    insert("cd $LOCALSSD/ifs-scripts/")
     key("enter")
 go (ifs|if) (defaults | default):
-    insert("cd /perm/pajk/git/ifs-defaults/")
+    insert("cd $LOCALSSD/ifs-defaults/")
     key("enter")
 go (ifs|if) (suites | suite):
-    insert("cd /perm/pajk/git/ifs-suites/")
+    insert("cd $LOCALSSD/ifs-suites/")
     key("enter")
 go (ifs|if) bundle:
-    insert("cd /perm/pajk/git/ifs-bundle/")
+    insert("cd $LOCALSSD/ifs-bundle/")
+    key("enter")
+go ecwam source:
+    insert("cd $HPCPERM/ecwam/")
     key("enter")
 
 go (ifs|if) source git:
@@ -53,9 +59,6 @@ go (ifs|if) bundle git:
     key("enter")
 
 # commands to be used from ifs-source branch
-go ecwam source:
-    insert("cd contrib/ecwam/src/ecwam")
-    key("enter")
 go nemo source:
     insert("cd nemo/NEMOGCM_V40/src")
     key("enter")
@@ -94,7 +97,7 @@ que stat:
     insert("preprun pajk")
     key("enter")
 e c launch ssd:
-    insert("ecinteractive    -c32 -m 32G -s 32G -t 8:00:00")
+    insert("ecinteractive    -c32 -m 32G -s 32G -t 12:00:00")
     key("enter")
 e c launch jupiter:
     insert("ecinteractive -j -c32 -m 32G        -t 12:00:00")
@@ -102,9 +105,16 @@ e c launch jupiter:
 e c launch normal:
     insert("ecinteractive    -c32 -m 32G        -t 12:00:00")
     key("enter")
-(jupiter | e c ) cancel:
+e c restore ssd:
+    insert("ec_restore_local_ssd -r")
+    key("enter")
+que stat ssd:
+    insert("ecinteractive -q")
+    key("enter")
+e c cancel:
     insert("/usr/local/bin/ecinteractive -p hpc -k")
     key("enter")
+
 hpc:
     insert("ssh hpc2020-login")
     key("enter")

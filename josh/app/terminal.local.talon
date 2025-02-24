@@ -9,7 +9,7 @@ tag(): user.terminalNavi
 # basics
 
 move screenshots: insert("mv /Users/pajk/Documents/screenshots/")
-list screenshots:
+(list | loppy) screenshots:
     insert("ls -ltrh --color /Users/pajk/Documents/screenshots ")
     key("enter")
 
@@ -38,6 +38,11 @@ go screenshots:
 go literature:
     insert('cd ~/"OneDrive - ECMWF"/josh/unimelb/phd/literature')
     key("enter")
+
+katie (up | back): 
+    user.terminal_change_directory("..")
+    insert("ls -ltrh --color ")
+    key("enter")    
 
 # ------------------------------------------------
 # programs
