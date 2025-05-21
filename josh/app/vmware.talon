@@ -1,4 +1,4 @@
-app: VMware Horizon Client
+app: Omnissa Horizon Client
 -
 
 tag(): terminal

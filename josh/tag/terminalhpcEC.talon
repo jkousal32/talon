@@ -116,7 +116,7 @@ e c cancel:
     key("enter")
 
 hpc:
-    insert("ssh hpc2020-login")
+    insert("ssh hpc-login")
     key("enter")
 status jobs:
     insert("jobs")

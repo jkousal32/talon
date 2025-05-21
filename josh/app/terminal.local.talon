@@ -74,8 +74,8 @@ login:
     insert("tsh login")
     key("enter")
 portal:
-    insert("ssh -v -C -N -D 9050 -J pajk@jump.ecmwf.int pajk@hpc-login.ecmwf.int")
+    insert("ssh -v -C -N -D 9050 pajk@hpc-login")
     key("enter")
 jump:
-    insert("ssh hpc")
+    insert("ssh hpc-login")
     key("enter")
