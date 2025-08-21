@@ -38,8 +38,8 @@ move downloads bam:
     edit.paste()
     key("enter")
 make dir: insert("mkdir ")
-remove: insert("rm -f ")
-remove recursive: insert("rm -rf ")
+remove force: insert("rm -f ")
+remove force recursive: insert("rm -rf ")
 (cricket | crick it): key(ctrl-c)
 where am I:
     insert("pwd")
@@ -112,7 +112,7 @@ history:
 exit:    
     insert("exit ")
     key("enter")
-python:      insert("python3.8 ")
+python:      insert("python3 ")
 pip install: insert("pip3.8 install ")
 r sink :     insert("rsync -a ")
 r sink hpc:  insert("rsync -a hpc:")
@@ -131,10 +131,13 @@ katie (that | dat):
     edit.paste()
     key("enter")
 scp: 
-    insert("scp hpc: .")
+    insert("scp hpc-login: .")
     key("left:2")
+scp recursive: 
+    insert("scp -r hpc-login: .")
+    key("left:2")    
 scp (that | dat): 
-    insert("scp hpc: .")
+    insert("scp hpc-login: .")
     key("left:2")
     edit.paste()
     key("enter")
