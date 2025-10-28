@@ -31,3 +31,21 @@ tag:  user.python
 (new | noo) import:
     insert("from  import ")
     key("left:8")
+
+# things for python
+sis exit: 
+    edit.line_insert_down()
+    insert("sys.exit()")
+print that: 
+    edit.copy()
+    edit.line_insert_down()
+    insert("print(f':{}')")
+    key(left:5)
+    edit.paste()
+    sleep(200ms)
+    key(right:2)
+    sleep(200ms)
+    edit.paste()
+print empty: 
+    edit.line_insert_down()
+    insert("print()")

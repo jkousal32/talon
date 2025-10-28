@@ -62,6 +62,7 @@ centa:
     key("up")
     key("down")
 
+task manager: key(cmd-alt-esc)
 spotlight: key(cmd-space)
 spotlight sound: 
     key(cmd-space)

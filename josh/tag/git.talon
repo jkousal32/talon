@@ -15,8 +15,17 @@ git (ifs|if) branch that:
     edit.paste()
     insert(" -J ")
     key("left:4")
-git (ifs|if) branch:    insert("git ifsbranch ")
-git (ifs|if) remote:    insert("git ifsremote ")
+git (ifs|if) branch that main:
+    edit.copy()
+    insert("git main ifsbranch -B  ")
+    edit.paste()
+    insert(" -b  ")
+    edit.paste()
+    insert(" -J ")
+    key("left:4")
+git (ifs|if) branch:         insert("git ifsbranch ")
+git (ifs|if) branch main:    insert("git main ifsbranch ")
+git (ifs|if) remote:         insert("git ifsremote ")
 
 # delete remote branch 
 git branch delete remote: insert("git push origin --delete ")

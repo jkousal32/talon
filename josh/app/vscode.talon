@@ -5,6 +5,8 @@ tag(): terminal
 tag(): user.terminalhpc
 tag(): user.terminalhpcEC
 # tag(): user.terminalNavi # don't use, ECMWF internal commands are better
+tag(): user.python
+tag(): user.bash
 
 # ------------------------------------------------
 
