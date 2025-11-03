@@ -48,6 +48,10 @@ go ecwam source:
     key("cmd-l")
     insert("https://github.com/jkousal32/ecwam")
     key("enter")
+go (ifs|if) nemo:
+    key("cmd-l")
+    insert("https://git.ecmwf.int/users/pajk/repos/ifs-nemo/browse")
+    key("enter")
 go (ifs|if) (scripts | scripps | scripp):
     key("cmd-l")
     insert("https://git.ecmwf.int/users/pajk/repos/ifs-scripts/browse")
@@ -63,6 +67,10 @@ go (ifs|if) (suites | suite):
 go (ifs|if) bundle:
     key("cmd-l")
     insert("https://git.ecmwf.int/users/pajk/repos/ifs-bundle/browse")
+    key("enter")
+go (ifs|if) dock:
+    key("cmd-l")
+    insert("https://git.ecmwf.int/users/pajk/repos/ifs-scidoc/browse")
     key("enter")
 
 # only for google translate

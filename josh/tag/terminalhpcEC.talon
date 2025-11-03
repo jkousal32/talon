@@ -26,6 +26,9 @@ go ssd:
 go (ifs|if) source:
     insert("cd $LOCALSSD/ifs-source/")
     key("enter")
+go (ifs|if) nemo:
+    insert("cd $LOCALSSD/ifs-nemo/")
+    key("enter")
 go (ifs|if) (scripts | scripps | scripp):
     insert("cd $LOCALSSD/ifs-scripts/")
     key("enter")
@@ -37,6 +40,9 @@ go (ifs|if) (suites | suite):
     key("enter")
 go (ifs|if) bundle:
     insert("cd $LOCALSSD/ifs-bundle/")
+    key("enter")
+go (ifs|if) dock:
+    insert("cd $LOCALSSD/ifs-scidoc/")
     key("enter")
 go ecwam source:
     insert("cd $HPCPERM/ecwam/")
