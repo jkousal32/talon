@@ -40,6 +40,10 @@ google translate:
     key("cmd-l")
     insert("https://translate.google.com/?sl=auto&tl=en&op=translate")
     key("enter")
+go (ifs|if) test:
+    key("cmd-l")
+    insert("https://git.ecmwf.int/users/pajk/repos/ifs-test/browse")
+    key("enter")
 go (ifs|if) source:
     key("cmd-l")
     insert("https://git.ecmwf.int/users/pajk/repos/ifs-source/browse")

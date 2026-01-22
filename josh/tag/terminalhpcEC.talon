@@ -23,6 +23,9 @@ go ssd:
     insert("cd $LOCALSSD")
     key("enter")
 
+go (ifs|if) test:
+    insert("cd $LOCALSSD/ifs-test/")
+    key("enter")
 go (ifs|if) source:
     insert("cd $LOCALSSD/ifs-source/")
     key("enter")
@@ -48,6 +51,9 @@ go ecwam source:
     insert("cd $HPCPERM/ecwam/")
     key("enter")
 
+go (ifs|if) test git:
+    insert("cd ~/ifs-test.git/")
+    key("enter")
 go (ifs|if) source git:
     insert("cd ~/ifs-source.git/")
     key("enter")
@@ -62,6 +68,9 @@ go (ifs|if) (suites | suite) git:
     key("enter")
 go (ifs|if) bundle git:
     insert("cd ~/ifs-bundle.git/")
+    key("enter")
+go (ifs|if) dock:
+    insert("cd ~/ifs-scidoc.git/")
     key("enter")
 
 # commands to be used from ifs-source branch
@@ -89,8 +98,8 @@ open (that | dat):
     key("enter")
 grib list  : insert("grib_ls ")
 buffa dump : insert("bufr_dump ")
-que (cancel | dell): insert("scancel ")
-que (cancel | dell) bam:
+queue (cancel | dell): insert("scancel ")
+queue (cancel | dell) bam:
     mouse_click()
     mouse_click()
     edit.copy()
@@ -98,9 +107,10 @@ que (cancel | dell) bam:
     sleep(200ms)
     edit.paste()
     key("enter")
-que sub:             insert("sbatch ")
-que stat:
-    insert("preprun pajk")
+queue sub:             insert("sbatch ")
+queue stat:
+#   insert("preprun pajk")
+    insert("squeue -u pajk")
     key("enter")
 e c launch ssd:
     insert("ecinteractive    -c32 -m 32G -s 32G -t 12:00:00")
