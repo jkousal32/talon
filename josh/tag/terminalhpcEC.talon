@@ -69,22 +69,22 @@ go (ifs|if) (suites | suite) git:
 go (ifs|if) bundle git:
     insert("cd ~/ifs-bundle.git/")
     key("enter")
-go (ifs|if) dock:
+go (ifs|if) dock git:
     insert("cd ~/ifs-scidoc.git/")
     key("enter")
 
 # commands to be used from ifs-source branch
 go nemo source:
-    insert("cd nemo/NEMOGCM_V40/src")
+    insert("cd NEMOGCM_V40/src")
     key("enter")
 go nemo source ice:
-    insert("cd nemo/NEMOGCM_V40/src/ICE")
+    insert("cd NEMOGCM_V40/src/ICE")
     key("enter")
 go nemo source ocean:
-    insert("cd nemo/NEMOGCM_V40/src/OCE")
+    insert("cd NEMOGCM_V40/src/OCE")
     key("enter")
 go coupla source:
-    insert("cd nemo/coupled/src")
+    insert("cd coupled/src")
     key("enter")
 
 # ------------------------------------------------
@@ -96,10 +96,24 @@ open (that | dat):
     insert("xdg-open ")
     edit.paste()
     key("enter")
+cat (that | dat): 
+    edit.copy()
+    insert("cat ")
+    edit.paste()
+    key("enter")
 grib list  : insert("grib_ls ")
+grib to netcdf: insert("grib_to_netcdf ")
+grib to netcdf (that | dat): 
+    edit.copy()
+    insert("grib_to_netcdf ")
+    edit.paste()
+    insert(" -o ")
+    edit.paste()
+    insert(".nc")
+    key("enter")
 buffa dump : insert("bufr_dump ")
-queue (cancel | dell): insert("scancel ")
-queue (cancel | dell) bam:
+batch (cancel | dell): insert("scancel ")
+batch (cancel | dell) bam:
     mouse_click()
     mouse_click()
     edit.copy()
@@ -107,19 +121,19 @@ queue (cancel | dell) bam:
     sleep(200ms)
     edit.paste()
     key("enter")
-queue sub:             insert("sbatch ")
-queue stat:
+batch sub:             insert("sbatch ")
+batch stat:
 #   insert("preprun pajk")
     insert("squeue -u pajk")
     key("enter")
 e c launch ssd:
-    insert("ecinteractive    -c32 -m 32G -s 32G -t 12:00:00")
+    insert("ecinteractive    -c32 -m 32G -s 32G -t 36:00:00")
     key("enter")
 e c launch jupiter:
-    insert("ecinteractive -j -c32 -m 32G        -t 12:00:00")
+    insert("ecinteractive -j -c32 -m 32G        -t 36:00:00")
     key("enter")
 e c launch normal:
-    insert("ecinteractive    -c32 -m 32G        -t 12:00:00")
+    insert("ecinteractive    -c32 -m 32G        -t 36:00:00")
     key("enter")
 e c restore ssd:
     insert("ec_restore_local_ssd -r")
