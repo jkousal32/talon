@@ -40,6 +40,14 @@ google translate:
     key("cmd-l")
     insert("https://translate.google.com/?sl=auto&tl=en&op=translate")
     key("enter")
+go docks:
+    key("cmd-l")
+    insert("https://docs.google.com/")
+    key("enter")
+go scratch:
+    key("cmd-l")
+    insert("https://docs.google.com/document/d/1Aba-rw3xDEx0SkvKj4Tv21HFRty-DD4KjVHVuEdLZAg/edit?tab=t.0")
+    key("enter")
 go (ifs|if) test:
     key("cmd-l")
     insert("https://git.ecmwf.int/users/pajk/repos/ifs-test/browse")

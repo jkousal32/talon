@@ -112,8 +112,8 @@ grib to netcdf (that | dat):
     insert(".nc")
     key("enter")
 buffa dump : insert("bufr_dump ")
-batch (cancel | dell): insert("scancel ")
-batch (cancel | dell) bam:
+batch (cancel | dell | delete): insert("scancel ")
+batch (cancel | dell | delete) bam:
     mouse_click()
     mouse_click()
     edit.copy()
@@ -122,7 +122,7 @@ batch (cancel | dell) bam:
     edit.paste()
     key("enter")
 batch sub:             insert("sbatch ")
-batch stat:
+batch (stat | status):
 #   insert("preprun pajk")
     insert("squeue -u pajk")
     key("enter")

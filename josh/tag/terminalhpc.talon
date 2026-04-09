@@ -23,3 +23,9 @@ module list  :
     insert("module list ")
     key("enter")
 module load  : insert("module load ")
+tree level two:
+    insert("find . -maxdepth 2 -print | sed -e 's;[^/]*/;|____ ;g'")
+    key("enter")
+tree level three:
+    insert("find . -maxdepth 3 -print | sed -e 's;[^/]*/;|____ ;g'")
+    key("enter")

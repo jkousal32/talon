@@ -73,7 +73,8 @@ loppy (that | dat) star:
     insert("ls -lh --color")
     key("enter")
 ((list | loppy) size | doosha):
-    insert("du -sh *")
+    #insert("du -sh *")
+    insert("ncdu -r --color dark .")
     key("enter")
 tree level two:
     insert("tree -L 2")
