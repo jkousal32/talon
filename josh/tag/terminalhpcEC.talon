@@ -52,28 +52,28 @@ go ecwam source:
     key("enter")
 
 go (ifs|if) test git:
-    insert("cd ~/ifs-test.git/")
+    insert("cd ~/github/ifs-test.git/")
     key("enter")
 go (ifs|if) source git:
-    insert("cd ~/ifs-source.git/")
+    insert("cd ~/github/ifs-source.git/")
     key("enter")
 go (ifs|if) (scripts | scripps | scripp) git:
-    insert("cd ~/ifs-scripts.git/")
+    insert("cd ~/github/ifs-scripts.git/")
     key("enter")
 go (ifs|if) (defaults | default) git:
-    insert("cd ~/ifs-defaults.git/")
+    insert("cd ~/github/ifs-defaults.git/")
     key("enter")
 go (ifs|if) (suites | suite) git:
-    insert("cd ~/ifs-suites.git/")
+    insert("cd ~/github/ifs-suites.git/")
     key("enter")
 go (ifs|if) bundle git:
-    insert("cd ~/ifs-bundle.git/")
+    insert("cd ~/github/ifs-bundle.git/")
     key("enter")
 go (ifs|if) dock git:
-    insert("cd ~/ifs-scidoc.git/")
+    insert("cd ~/github/ifs-scidoc.git/")
     key("enter")
 
-# commands to be used from ifs-source branch
+# commands to be used from ifs-nemo branch
 go nemo source:
     insert("cd NEMOGCM_V40/src")
     key("enter")

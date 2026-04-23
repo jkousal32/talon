@@ -48,41 +48,79 @@ go scratch:
     key("cmd-l")
     insert("https://docs.google.com/document/d/1Aba-rw3xDEx0SkvKj4Tv21HFRty-DD4KjVHVuEdLZAg/edit?tab=t.0")
     key("enter")
-go (ifs|if) test:
+
+go ecwam central:
     key("cmd-l")
-    insert("https://git.ecmwf.int/users/pajk/repos/ifs-test/browse")
+    insert("https://github.com/ecmwf-ifs/ecwam")
     key("enter")
-go (ifs|if) source:
+go (ifs|if) test central:
     key("cmd-l")
-    insert("https://git.ecmwf.int/users/pajk/repos/ifs-source/browse")
+    insert("https://github.com/ecmwf-ifs/ifs-test")
     key("enter")
-go ecwam source:
+go (ifs|if) source central:
+    key("cmd-l")
+    insert("https://github.com/ecmwf-ifs/ifs-source")
+    key("enter")
+go (ifs|if) nemo central:
+    key("cmd-l")
+    insert("https://github.com/ecmwf-ifs/ifs-nemo")
+    key("enter")
+go (ifs|if) (scripts | scripps | scripp) central:
+    key("cmd-l")
+    insert("https://github.com/ecmwf-ifs/ifs-scripts")
+    key("enter")
+go (ifs|if) (defaults | default) central:
+    key("cmd-l")
+    insert("https://github.com/ecmwf-ifs/ifs-defaults")
+    key("enter")
+go (ifs|if) (suites | suite) central:
+    key("cmd-l")
+    insert("https://github.com/ecmwf-ifs/ifs-suites")
+    key("enter")
+go (ifs|if) bundle central:
+    key("cmd-l")
+    insert("https://github.com/ecmwf-ifs/ifs-bundle")
+    key("enter")
+go (ifs|if) dock central:
+    key("cmd-l")
+    insert("https://github.com/ecmwf-ifs/ifs-scidoc")
+    key("enter")
+
+go ecwam:
     key("cmd-l")
     insert("https://github.com/jkousal32/ecwam")
     key("enter")
+go (ifs|if) test:
+    key("cmd-l")
+    insert("https://github.com/jkousal32/ifs-test")
+    key("enter")
+go (ifs|if) source:
+    key("cmd-l")
+    insert("https://github.com/jkousal32/ifs-source")
+    key("enter")
 go (ifs|if) nemo:
     key("cmd-l")
-    insert("https://git.ecmwf.int/users/pajk/repos/ifs-nemo/browse")
+    insert("https://github.com/jkousal32/ifs-nemo")
     key("enter")
 go (ifs|if) (scripts | scripps | scripp):
     key("cmd-l")
-    insert("https://git.ecmwf.int/users/pajk/repos/ifs-scripts/browse")
+    insert("https://github.com/jkousal32/ifs-scripts")
     key("enter")
 go (ifs|if) (defaults | default):
     key("cmd-l")
-    insert("https://git.ecmwf.int/users/pajk/repos/ifs-defaults/browse")
+    insert("https://github.com/jkousal32/ifs-defaults")
     key("enter")
 go (ifs|if) (suites | suite):
     key("cmd-l")
-    insert("https://git.ecmwf.int/users/pajk/repos/ifs-suites/browse")
+    insert("https://github.com/jkousal32/ifs-suites")
     key("enter")
 go (ifs|if) bundle:
     key("cmd-l")
-    insert("https://git.ecmwf.int/users/pajk/repos/ifs-bundle/browse")
+    insert("https://github.com/jkousal32/ifs-bundle")
     key("enter")
 go (ifs|if) dock:
     key("cmd-l")
-    insert("https://git.ecmwf.int/users/pajk/repos/ifs-scidoc/browse")
+    insert("https://github.com/jkousal32/ifs-scidoc")
     key("enter")
 
 # only for google translate
