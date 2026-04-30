@@ -16,7 +16,7 @@ go (perm | per) mars:
 go script mars:
     insert("cd ~/scripts/get/mars/seasonal/")
     key("enter")
-go ec vol:
+go (ec|eck|e c) vol:
     insert("cd /ec/vol/ifs/rd/pajk/")
     key("enter")
 go ssd:
@@ -47,7 +47,7 @@ go (ifs|if) bundle:
 go (ifs|if) dock:
     insert("cd $LOCALSSD/ifs-scidoc/")
     key("enter")
-go ecwam source:
+go (ecwam|eckwam|e c wam) source:
     insert("cd $HPCPERM/ecwam/")
     key("enter")
 
@@ -126,22 +126,22 @@ batch (stat | status):
 #   insert("preprun pajk")
     insert("squeue -u pajk")
     key("enter")
-e c launch ssd:
+(ec|eck|e c) launch ssd:
     insert("ecinteractive    -c32 -m 32G -s 32G -t 36:00:00")
     key("enter")
-e c launch jupiter:
+(ec|eck|e c) launch jupiter:
     insert("ecinteractive -j -c32 -m 32G        -t 36:00:00")
     key("enter")
-e c launch normal:
+(ec|eck|e c) launch normal:
     insert("ecinteractive    -c32 -m 32G        -t 36:00:00")
     key("enter")
-e c restore ssd:
+(ec|eck|e c) restore ssd:
     insert("ec_restore_local_ssd -r")
     key("enter")
 que stat ssd:
     insert("ecinteractive -q")
     key("enter")
-e c cancel:
+(ec|eck|e c) cancel:
     insert("/usr/local/bin/ecinteractive -p hpc -k")
     key("enter")
 
