@@ -23,53 +23,53 @@ go ssd:
     insert("cd $LOCALSSD")
     key("enter")
 
-go (ifs|if) test:
-    insert("cd $LOCALSSD/ifs-test/")
+go (ifs|if|i f) test:
+    insert("cd $HPCPERM/ifs-test/")
     key("enter")
-go (ifs|if) source:
-    insert("cd $LOCALSSD/ifs-source/")
+go (ifs|if|i f) source:
+    insert("cd $HPCPERM/ifs-source/")
     key("enter")
-go (ifs|if) nemo:
-    insert("cd $LOCALSSD/ifs-nemo/")
+go (ifs|if|i f) nemo:
+    insert("cd $HPCPERM/ifs-nemo/")
     key("enter")
-go (ifs|if) (scripts | scripps | scripp):
-    insert("cd $LOCALSSD/ifs-scripts/")
+go (ifs|if|i f) (scripts | scripps | scripp):
+    insert("cd $HPCPERM/ifs-scripts/")
     key("enter")
-go (ifs|if) (defaults | default):
-    insert("cd $LOCALSSD/ifs-defaults/")
+go (ifs|if|i f) (defaults | default):
+    insert("cd $HPCPERM/ifs-defaults/")
     key("enter")
-go (ifs|if) (suites | suite):
-    insert("cd $LOCALSSD/ifs-suites/")
+go (ifs|if|i f) (suites | suite):
+    insert("cd $HPCPERM/ifs-suites/")
     key("enter")
-go (ifs|if) bundle:
-    insert("cd $LOCALSSD/ifs-bundle/")
+go (ifs|if|i f) bundle:
+    insert("cd $HPCPERM/ifs-bundle/")
     key("enter")
-go (ifs|if) dock:
-    insert("cd $LOCALSSD/ifs-scidoc/")
+go (ifs|if|i f) dock:
+    insert("cd $HPCPERM/ifs-scidoc/")
     key("enter")
 go (ecwam|eckwam|e c wam) source:
     insert("cd $HPCPERM/ecwam/")
     key("enter")
 
-go (ifs|if) test git:
+go (ifs|if|i f) test git:
     insert("cd ~/github/ifs-test.git/")
     key("enter")
-go (ifs|if) source git:
+go (ifs|if|i f) source git:
     insert("cd ~/github/ifs-source.git/")
     key("enter")
-go (ifs|if) (scripts | scripps | scripp) git:
+go (ifs|if|i f) (scripts | scripps | scripp) git:
     insert("cd ~/github/ifs-scripts.git/")
     key("enter")
-go (ifs|if) (defaults | default) git:
+go (ifs|if|i f) (defaults | default) git:
     insert("cd ~/github/ifs-defaults.git/")
     key("enter")
-go (ifs|if) (suites | suite) git:
+go (ifs|if|i f) (suites | suite) git:
     insert("cd ~/github/ifs-suites.git/")
     key("enter")
-go (ifs|if) bundle git:
+go (ifs|if|i f) bundle git:
     insert("cd ~/github/ifs-bundle.git/")
     key("enter")
-go (ifs|if) dock git:
+go (ifs|if|i f) dock git:
     insert("cd ~/github/ifs-scidoc.git/")
     key("enter")
 

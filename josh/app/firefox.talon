@@ -4,18 +4,6 @@ app: firefox
 tag(): user.comms
 tag(): user.editPatch
 
-(bookmark | bookie muck):   key("cmd-b")
-history:    key("cmd-shift-h")
-
-search bar:    
-    key("cmd-l")
-    sleep(200ms)
-    edit.line_end()
-copy url:    
-    key("cmd-l")
-    sleep(200ms)
-    key("cmd-c")
-
 go mail one:
     key("cmd-l")
     insert("https://mail.google.com/mail/u/0/#inbox")
