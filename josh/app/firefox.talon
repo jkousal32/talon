@@ -43,7 +43,7 @@ go onedrive:
     key("enter")
 go NEX hub:
     key("cmd-l")
-    insert("https://nexhub.ecmwf.int/")
+    insert("https://nexhub.ecmwf.int/expert")
     key("enter")
 go (ecwam|eckwam|e c wam) central:
     key("cmd-l")

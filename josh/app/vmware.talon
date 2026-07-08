@@ -39,7 +39,7 @@ termo window new:    key(ctrl-shift-n)
 # ------------------------------------------------
 # programs
 
-e c flow:
+(ecflow|eckflow|e c flow):
     insert('ecflow_ui&')
     key(enter)
 prepIFS:

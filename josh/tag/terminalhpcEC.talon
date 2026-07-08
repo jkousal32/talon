@@ -7,6 +7,9 @@ tag:  user.terminalhpcEC
 # ------------------------------------------------
 # navigation
 
+go (lustre | lustah):
+    insert("cd /lus/h2resw02/project/waver")
+    key("enter")
 go HPC perm:
     insert("cd $HPCPERM")
     key("enter")
@@ -47,7 +50,7 @@ go (ifs|if|i f) bundle:
 go (ifs|if|i f) dock:
     insert("cd $HPCPERM/ifs-scidoc/")
     key("enter")
-go (ecwam|eckwam|e c wam) source:
+go (ecwam|eckwam|e c wam):
     insert("cd $HPCPERM/ecwam/")
     key("enter")
 
@@ -56,6 +59,9 @@ go (ifs|if|i f) test git:
     key("enter")
 go (ifs|if|i f) source git:
     insert("cd ~/github/ifs-source.git/")
+    key("enter")
+go (ifs|if|i f) nemo git:
+    insert("cd ~/github/ifs-nemo.git/")
     key("enter")
 go (ifs|if|i f) (scripts | scripps | scripp) git:
     insert("cd ~/github/ifs-scripts.git/")
@@ -123,8 +129,10 @@ batch (cancel | dell | delete) bam:
     key("enter")
 batch sub:             insert("sbatch ")
 batch (stat | status):
-#   insert("preprun pajk")
     insert("squeue -u pajk")
+    key("enter")
+batch (stat | status) full:
+    insert("preprun pajk")
     key("enter")
 (ec|eck|e c) launch ssd:
     insert("ecinteractive    -c32 -m 32G -s 32G -t 36:00:00")

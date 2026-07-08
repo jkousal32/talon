@@ -90,6 +90,16 @@ tab close bam:
 diff:
     insert("diff -y --suppress-common-lines ")
 
+link soft:
+    insert("ln -s ")
+link that :
+    edit.copy()
+    insert("ln -s ")
+    edit.paste()
+    sleep(100ms)
+    insert(" ")
+    edit.paste()
+
 # ------------------------------------------------
 # navigation
 go (home | hommy):
