@@ -102,7 +102,7 @@ open (that | dat):
     insert("xdg-open ")
     edit.paste()
     key("enter")
-cat (that | dat): 
+catcat (that | dat): 
     edit.copy()
     insert("cat ")
     edit.paste()

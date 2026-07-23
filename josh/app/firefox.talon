@@ -45,6 +45,16 @@ go NEX hub:
     key("cmd-l")
     insert("https://nexhub.ecmwf.int/expert")
     key("enter")
+go QUAVER:
+    key("cmd-l")
+    insert("https://sites.ecmwf.int/pajk/quaver/")
+    key("enter")
+go WAVER:
+    key("cmd-l")
+    insert("https://sites.ecmwf.int/pajk/waver/")
+    key("enter")
+
+# repositories
 go (ecwam|eckwam|e c wam) central:
     key("cmd-l")
     insert("https://github.com/ecmwf-ifs/ecwam")
