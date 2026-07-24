@@ -1,9 +1,14 @@
 -
 settings():
 
-    # Uses online API to enable different languages (Australian English - picks up what is in mac settings) - both for spelling and speech recognition
-    speech.engine = 'webspeech'
+    # Uses API to enable different languages - both for spelling and speech recognition 
+    # speech engines: mac,macsf, webspeech 
+    #  - when this line is commented out, it can be selected interactively via the talon menu
+    #speech.engine = "mac"
 
+    # speech languages: en_US, en_AU
+    #speech.language = "en_AU"
+    
     # Control how long talon waits before executing a command
     speech.timeout=0.3
 

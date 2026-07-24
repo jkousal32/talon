@@ -1,4 +1,8 @@
 from talon import Module, speech_system
+from talon.engines.macsf import MacSFEngine
+
+engine = MacSFEngine()
+speech_system.add_engine(engine)
 
 mod = Module()
 
