@@ -16,9 +16,17 @@ go mail three:
     key("cmd-l")
     insert("https://outlook.office.com/mail/")
     key("enter")
-go calendar:
+go calendar one:
+    key("cmd-l")
+    insert("https://calendar.google.com/calendar/")
+    key("enter")
+go calendar three:
     key("cmd-l")
     insert("https://outlook.office.com/calendar/view/month")
+    key("enter")
+go maps:
+    key("cmd-l")
+    insert("https://www.google.com/maps")
     key("enter")
 go status:
     key("cmd-l")
@@ -45,6 +53,10 @@ go NEX hub:
     key("cmd-l")
     insert("https://nexhub.ecmwf.int/expert")
     key("enter")
+go IVER:
+    key("cmd-l")
+    insert("https://sites.ecmwf.int/pajk/iver/")
+    key("enter")
 go QUAVER:
     key("cmd-l")
     insert("https://sites.ecmwf.int/pajk/quaver/")
@@ -52,6 +64,14 @@ go QUAVER:
 go WAVER:
     key("cmd-l")
     insert("https://sites.ecmwf.int/pajk/waver/")
+    key("enter")
+go (ecbox|eckbox|e c box):
+    key("cmd-l")
+    insert("https://sites.ecmwf.int/pajk/ecbox/")
+    key("enter")
+go confluence:
+    key("cmd-l")
+    insert("https://confluence.ecmwf.int/")
     key("enter")
 
 # repositories
